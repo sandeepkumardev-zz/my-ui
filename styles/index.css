@@ -2,6 +2,9 @@
 @import "./variable.css";
 @import "./padding.css";
 @import "./margin.css";
+@import "./colors.css";
+@import "./sizes.css";
 
 @import "./typography.css";
-@import "../components/navbar.css"
+@import "../components/navbar.css";
+@import "../components/avatar.css";
