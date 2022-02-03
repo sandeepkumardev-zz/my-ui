@@ -2,4 +2,6 @@
 @import "./variable.css";
 @import "./padding.css";
 @import "./margin.css";
+
 @import "./typography.css";
+@import "../components/navbar.css"

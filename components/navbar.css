@@ -1,0 +1,34 @@
+.navbar {
+  flex-basis: 100%;
+  min-width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--primary-color-light);
+  color: var(--text-color);
+}
+
+.navbar h2 {
+  font-size: 2.5rem;
+}
+
+.navbar i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navbar__content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar__icons {
+  display: flex;
+  margin-left: auto;
+  gap: 4rem;
+}
+
+.navbar__icons i {
+  font-size: 2.4rem;
+}
