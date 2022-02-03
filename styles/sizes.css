@@ -1,11 +1,11 @@
 .s-1 {
-    width: 1rem;
-    height: 1rem;
+    width: 1rem !important;
+    height: 1rem !important;
 }
 
 .s-2 {
-    width: 2rem;
-    height: 2rem;
+    width: 2rem !important;
+    height: 2rem !important;
 }
 
 .s-3 {
@@ -34,16 +34,16 @@
 }
 
 .s-8 { 
-    width: 8rem;
-    height: 8rem;
+    width: 8rem !important;
+    height: 8rem !important;
 }
 
 .s-9 { 
-    width: 9rem;
-    height: 9rem;
+    width: 9rem !important;
+    height: 9rem !important;
 }
 
 .s-10 { 
-    width: 10rem;
-    height: 10rem;
+    width: 10rem !important;
+    height: 10rem !important;
 }
