@@ -1,12 +1,13 @@
 /*************** Component Imports ***************/
 @import "./variable.css";
+
+@import "../components/Navbar/navbar.css";
+@import "../components/Avatar/avatar.css";
+@import "../components/Badge/badge.css";
+@import "../components/Alert/alert.css";
+
+@import "./sizes.css";
 @import "./padding.css";
 @import "./margin.css";
 @import "./colors.css";
-@import "./sizes.css";
-
 @import "./typography.css";
-@import "../components/navbar.css";
-@import "../components/avatar.css";
-@import "../components/badge.css"
-@import "../components/alert.css"
