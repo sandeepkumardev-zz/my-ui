@@ -2,8 +2,11 @@
 @import "./variable.css";
 @import "./padding.css";
 @import "./margin.css";
+@import "./colors.css";
+@import "./sizes.css";
 
 @import "./typography.css";
-@import "../components/badge.css";
 @import "../components/navbar.css";
+@import "../components/avatar.css";
+@import "../components/badge.css"
 @import "../components/alert.css"
