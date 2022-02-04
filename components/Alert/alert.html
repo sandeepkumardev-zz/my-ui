@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alert</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body>
@@ -111,17 +111,20 @@
         <div class="alert__toast__action">
             <button onclick="showToast()">Open</button>
         </div>
-        <div class="alert alert--success alert__toast" id="alert__toast">
-            <div class="alert__icon">
-                <i class="far fa-check-circle"></i>
-            </div>
-            <div class="alert__message">
-                This is a success alert— check it out!
-            </div>
-            <div class="alert__actions">
-                <button onclick="hideToast()">close</button>
+        <div class="toast">
+            <div class="alert alert--success alert__toast" id="alert__toast">
+                <div class="alert__icon">
+                    <i class="far fa-check-circle"></i>
+                </div>
+                <div class="alert__message">
+                    This is a success alert— check it out!
+                </div>
+                <div class="alert__actions">
+                    <button onclick="hideToast()">close</button>
+                </div>
             </div>
         </div>
+
 
     </div>
 </body>
