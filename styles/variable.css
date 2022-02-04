@@ -12,14 +12,18 @@
   --text-color: white;
   --text-color-dark: #202020;
 
-  --success-color: #03c99b;
+  --success-color: #02ad86;
   --success-bg: #03c99b1a;
-  --info-color: #5dc4eb;
+  --success-bg-dark: #01a17c1a;
+  --info-color: #2cbaee;
   --info-bg: #5dc4eb1a;
+  --info-bg-dark: #37b9e91a;
   --warning-color: #ffc95c;
   --warning-bg: #ffc95c1a;
+  --warning-bg: #fcbc3d1a;
   --danger-color: #fa7178;
   --danger-bg: #fa71781a;
+  --danger-bg: #f548511a;
 
   --dark-grey: rgb(100, 100, 100);
   --grey: rgb(150, 150, 150);
