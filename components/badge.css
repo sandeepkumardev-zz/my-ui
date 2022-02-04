@@ -1,0 +1,49 @@
+.badge__group {
+  min-width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--light-grey);
+  gap: 2rem;
+}
+
+.badge {
+  padding-right: 1.7rem;
+  padding-top: 1.7rem;
+  font-size: 2rem;
+  color: inherit;
+  position: relative;
+}
+
+.badge span:first-child {
+  /*contentcenter*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*positioning*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: var(--text-color);
+  font-size: 0.8em;
+  min-width: 1.6em;
+  padding: 0.25rem;
+  padding-bottom: 3px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+.bg-blue {
+  background-color: rgb(21, 39, 202);
+}
+
+.bg-green {
+  background-color: rgb(21, 150, 100);
+}
+
+.bg-gray {
+  background-color: rgb(100, 100, 100);
+}
+
+.bg-red {
+  background-color: rgb(200, 50, 50);
+}
