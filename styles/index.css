@@ -5,6 +5,7 @@
 @import "../components/Avatar/avatar.css";
 @import "../components/Badge/badge.css";
 @import "../components/Alert/alert.css";
+@import "../components/Button/button.css";
 
 @import "./sizes.css";
 @import "./padding.css";
