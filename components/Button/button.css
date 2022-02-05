@@ -201,3 +201,24 @@
   color: var(--primary-color);
   background-color: var(--primary-color-highlight);
 }
+
+/* Floating Action Button */
+.btn__float {
+  color: inherit;
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.4rem;
+  background-color: var(--grey-highlight);
+  border: none;
+  border-radius: 50%;
+}
+
+.btn__float--primary {
+  color: var(--primary-color);
+  background-color: var(--primary-color-highlight);
+}
+
+.btn__float--secondary {
+  color: var(--accent-color);
+  background-color: var(--accent-color-highlight);
+}
