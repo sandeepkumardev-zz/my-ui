@@ -1,0 +1,47 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.RuiCard {
+  min-width: 27rem;
+  max-width: 37rem;
+  overflow: hidden;
+}
+
+.RuiCard__content {
+  padding: 1.6rem;
+}
+
+.RuiCard__Action__Area {
+  width: 100%;
+  display: block;
+  text-align: inherit;
+}
+.RuiCard__Action__Area:hover {
+  background-color: var(--light-grey);
+  transition: background-color 300ms;
+}
+
+.RuiCard__media {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.RuiCard__media--img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.RuiCard__actions {
+  padding: 1rem;
+  display: flex;
+}
