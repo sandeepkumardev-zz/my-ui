@@ -1,3 +1,4 @@
+/* basic style for buttons */
 .RuiButtonBase {
   color: inherit;
   border: 0;
@@ -17,9 +18,13 @@
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
 }
+.RuiButtonBase.Rui__disabled {
+  cursor: default;
+  pointer-events: none;
+}
 
 .RuiButton {
-  color: var(--text-color);
+  color: var(--text-color-dark);
   padding: 0.6rem 1.6rem;
   font-size: 1.6rem;
   min-width: 6.4rem;
@@ -35,6 +40,98 @@
   text-transform: uppercase;
 }
 
+/* style for contained buttons */
+.RuiButton--contained {
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  background-color: #e0e0e0;
+}
+
+.RuiButton--containedPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color-light);
+}
+
+.RuiButton--containedSecondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.RuiButton--contained.Rui__disabled {
+  color: var(--dark-grey);
+  box-shadow: none;
+  background-color: var(--grey-highlight);
+}
+
+/* style for text buttons */
+.RuiButton--text {
+  padding: 0.4rem 0.8rem;
+}
+.RuiButton--text:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiButton--textPrimary {
+  color: var(--primary-color);
+}
+.RuiButton--textPrimary:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+.RuiButton--textSecondary {
+  color: var(--accent-color);
+}
+.RuiButton--textSecondary:hover {
+  background-color: var(--accent-color-highlight);
+}
+
+.RuiButton--text.Rui__disabled {
+  color: var(--dark-grey);
+}
+
+/* style for outlined buttons */
+.RuiButton--outlined {
+  border: 1px solid var(--dark-grey);
+  padding: 0.5rem 1.5rem;
+}
+.RuiButton--outlined:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiButton--outlinedPrimary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.RuiButton--outlinedPrimary:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+.RuiButton--outlinedSecondary {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.RuiButton--outlinedSecondary:hover {
+  background-color: var(--accent-color-highlight);
+}
+
+.RuiButton--outlined.Rui__disabled {
+  color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
+}
+
+.RuiButton__label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.RuiButton--textSizeSmall {
+  padding: 4px 5px;
+  font-size: 1.35rem;
+}
+
+/* style for Icon buttons */
 .RuiIconButton {
   flex: 0 0 auto;
   color: var(--text-color-dark);
@@ -49,13 +146,6 @@
   background-color: var(--grey-highlight);
 }
 
-.RuiIconButton__Label {
-  width: 100%;
-  display: flex;
-  align-items: inherit;
-  justify-content: inherit;
-}
-
 .RuiIconButton__Icon {
   fill: currentColor;
   width: 1em;
@@ -67,243 +157,62 @@
   user-select: none;
 }
 
-.RuiIconButton--colorInherit {
-  color: inherit;
+.RuiIconButton__Label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
 }
 
-.RuiButton--textPrimary {
-  color: var(--primary-color);
-}
-.RuiButton--textPrimary:hover {
-  background-color: var(--primary-color-highlight);
+.RuiIconButton--colorPrimary {
+  color: var(--primary-color-light);
 }
 
-.RuiButton--textSizeSmall {
-  padding: 4px 5px;
-  font-size: 1.35rem;
+.RuiIconButton--colorSecondary {
+  color: var(--accent-color);
 }
 
-.btn {
-  margin: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.4rem;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
+.RuiIconButton.Rui__disabled {
+  color: var(--dark-grey);
+}
+
+/* style for float button */
+.RuiFloatButton {
+  color: var(--text-color-dark);
+  width: 5.6rem;
+  height: 5.6rem;
+  padding: 0;
+  font-size: 2.4rem;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
   box-sizing: border-box;
-  cursor: pointer;
-  user-select: none;
-  border: 1px solid transparent;
-  color: inherit;
+  min-height: 3.6rem;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 50%;
+  letter-spacing: 0.02857rem;
   text-transform: uppercase;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: var(--grey-highlight);
 }
 
-.btn--primary {
+.RuiFloatButton--primary {
   color: var(--text-color);
   background-color: var(--primary-color-light);
 }
 
-.btn--secondary {
+.RuiFloatButton--secondary {
   color: var(--text-color);
   background-color: var(--accent-color);
 }
 
-.btn--disabled {
-  color: var(--dark-grey);
-  background-color: var(--grey-highlight);
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-.btn--link {
-  color: var(--text-color);
-  background-color: var(--primary-color-light);
-}
-.btn--link a {
-  text-decoration: none;
-}
-
-/* text buttons */
-.btn__text {
-  color: inherit;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.btn__text:hover {
-  background-color: var(--grey-highlight);
-}
-
-.btn__text--primary {
-  color: var(--primary-color);
-}
-.btn__text--primary:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-.btn__text--secondary {
-  color: var(--accent-color);
-}
-.btn__text--secondary:hover {
-  background-color: var(--accent-color-highlight);
-}
-
-.btn__text--disabled {
-  cursor: not-allowed;
-  color: var(--dark-grey);
-}
-.btn__text--disabled:hover {
-  background-color: transparent;
-}
-
-.btn__text--link {
-  color: var(--primary-color);
-}
-.btn__text--link:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-/* outlined buttons */
-.btn__outline {
-  color: inherit;
-  background-color: transparent;
-  border: 1px solid var(--dark-grey);
-  box-shadow: none;
-}
-.btn__outline:hover {
-  background-color: var(--grey-highlight);
-}
-
-.btn__outline--primary {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-.btn__outline--primary:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-.btn__outline--secondary {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-.btn__outline--secondary:hover {
-  background-color: var(--accent-color-highlight);
-}
-
-.btn__outline--disabled {
-  cursor: not-allowed;
-  color: var(--dark-grey);
-  border: 1px solid var(--dark-grey);
-}
-.btn__outline--disabled:hover {
-  background-color: transparent;
-}
-
-.btn__outline--link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-.btn__outline--link:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-/* icons & floating Action Button */
-.btn__icon {
-  color: inherit;
-  width: 5rem;
-  height: 5rem;
-  font-size: 2.4rem;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 50%;
-}
-.btn__icon:hover {
-  background-color: var(--grey-highlight);
-}
-
-.btn__icon--primary {
-  color: var(--primary-color);
-}
-.btn__icon--primary:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-.btn__icon--secondary {
-  color: var(--accent-color);
-}
-.btn__icon--secondary:hover {
-  background-color: var(--accent-color-highlight);
-}
-
-.btn__icon--disabled {
-  cursor: not-allowed;
-  color: var(--dark-grey);
-}
-.btn__icon--disabled:hover {
-  background-color: transparent;
-}
-
-.btn__icon--link {
-  color: var(--primary-color);
-}
-.btn__icon--link:hover {
-  background-color: var(--primary-color-highlight);
-}
-
-/* Buttons with icons and labels */
-.btn__icon__label {
-  color: inherit;
-  border: none;
-  box-shadow: none;
-  background-color: var(--grey-highlight);
-}
-.btn__icon__label i {
-  margin-right: 0.8rem;
-  font-size: 1.5rem;
-}
-
-.btn__icon__label--primary {
-  color: var(--primary-color);
-  background-color: var(--primary-color-highlight);
-}
-
-.btn__icon__label--secondary {
-  color: var(--accent-color);
-  background-color: var(--accent-color-highlight);
-}
-
-.btn__icon__label--disabled {
-  cursor: not-allowed;
-  color: var(--dark-grey);
-  background-color: var(--grey-highlight);
-}
-
-.btn__icon__label--link {
-  color: var(--primary-color);
-  background-color: var(--primary-color-highlight);
-}
-
-/* Floating Action Button */
-.btn__float {
-  color: inherit;
-  width: 5rem;
-  height: 5rem;
-  font-size: 2.4rem;
-  background-color: var(--grey-highlight);
-  border: none;
-  border-radius: 50%;
-}
-
-.btn__float--primary {
-  color: var(--primary-color);
-  background-color: var(--primary-color-highlight);
-}
-
-.btn__float--secondary {
-  color: var(--accent-color);
-  background-color: var(--accent-color-highlight);
+/* style for text with icon buttons */
+.RuiButton__startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
 }
