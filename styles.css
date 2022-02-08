@@ -28,12 +28,12 @@ ul {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 50%;
+    font-size: 59%;
   }
 }
 
 @media screen and (max-width: 400px) {
   html {
-    font-size: 40%;
+    font-size: 56%;
   }
 }
