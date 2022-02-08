@@ -1,31 +1,59 @@
-h1 {
-  font-size: 3rem;
+.RuiTypography__h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-h2 {
-  font-size: 2.5rem;
+.RuiTypography__h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-h3 {
+.RuiTypography__h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h4 {
   font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-h4 {
-  font-size: 1.75rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
-h6 {
-  font-size: 1.25rem;
-}
-
-p{
+.RuiTypography__h5 {
   font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.text-center {
-  text-align: center;
+.RuiTypography__h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__body1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938rem;
+}
+
+.RuiTypography__body2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071rem;
+}
+
+.RuiTypography--colorTextSecondary {
+  color: var(--dark-grey);
 }
