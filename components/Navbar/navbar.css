@@ -1,34 +1,44 @@
-.navbar {
-  flex-basis: 100%;
-  min-width: 30rem;
+.RuiAppbar {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--primary-color-light);
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.RuiAppBar--colorPrimary {
   color: var(--text-color);
+  background-color: var(--primary-color-light);
 }
 
-.navbar h2 {
-  font-size: 2.5rem;
+.RuiAppBar--positionStatic {
+  position: static;
 }
 
-.navbar i {
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.navbar__content {
+.RuiToolbar {
   display: flex;
+  position: relative;
   align-items: center;
-  gap: 3rem;
 }
 
-.navbar__icons {
-  display: flex;
-  margin-left: auto;
-  gap: 4rem;
+.RuiToolbar--regular {
+  min-height: 5.6rem;
 }
 
-.navbar__icons i {
-  font-size: 2.4rem;
+.RuiToolbar--gutters {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--regular {
+    min-height: 6.4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--gutters {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
 }
