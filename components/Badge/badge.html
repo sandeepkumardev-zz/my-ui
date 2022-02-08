@@ -11,58 +11,59 @@
 
 <body>
   <h2>Badge on Text</h2>
-  <div class="badge__group p-3 mx-3 mb-5 mt-1">
-    <div class="badge__text">
-      <span class="bg-blue">100</span>
-      <span>Likes</span>
-    </div>
-    <div class="badge__text">
-      <span class="bg-green">3</span>
-      <span>Comments</span>
-    </div>
-    <div class="badge__text">
-      <span class="bg-gray">9</span>
-      <span>Share</span>
-    </div>
+  <div class="RuiBadge m-5">
+    <p class="RuiTypography__body1">Likes</p>
+    <span class="RuiBadge__badge RuiBadge__badge--colorPrimary RuiBadge__badge--anchorOriginTopRight">0</span>
   </div>
-
-  <h2>Badge on Avatar</h2>
-  <div class="badge__group p-3 mx-3 mb-5 mt-1">
-    <div class="badge__avatar">
-      <span class="bg-blue">10</span>
-      <div class="avatar__item">
-        <img src="https://v4.mui.com/static/images/avatar/1.jpg" alt="Avatar" />
-      </div>
-    </div>
-    <div class="badge__avatar badge__avatar--status--top">
-      <span class="bg-gray"></span>
-      <div class="avatar__item bg-pink">
-        SK
-      </div>
-    </div>
-    <div class="badge__avatar badge__avatar--status--bottom">
-      <span class="bg-green"></span>
-      <div class="avatar__item">
-        <img src="https://v4.mui.com/static/images/avatar/3.jpg" alt="Avatar" />
-      </div>
-    </div>
+  <div class="RuiBadge m-5">
+    <p class="RuiTypography__body1">Comments</p>
+    <span class="RuiBadge__badge RuiBadge__badge--colorPrimary RuiBadge__badge--anchorOriginTopRight">3</span>
+  </div>
+  <div class="RuiBadge m-5">
+    <p class="RuiTypography__body1">Share</p>
+    <span class="RuiBadge__badge RuiBadge__badge--colorPrimary RuiBadge__badge--anchorOriginTopRight">100</span>
   </div>
 
   <h2>Badge on Icons</h2>
-  <div class="badge__group p-3 mx-3 mb-5 mt-1">
-    <div class="badge__icons">
-      <span class="bg-blue">100</span>
-      <span><i class="fas fa-share-square c-blue"></i></span>
-    </div>
-    <div class="badge__icons">
-      <span class="bg-green">3</span>
-      <span><i class="fas fa-comment-dots c-maroon"></i></span>
-    </div>
-    <div class="badge__icons">
-      <span class="bg-gray">9</span>
-      <span><i class="fas fa-heart c-red"></i></span>
-    </div>
+  <div class="RuiBadge m-5">
+    <span class="RuiBadge__Icon"><i class="fas fa-smile-wink c-blue"></i></span>
+    <span
+      class="RuiBadge__badge RuiBadge__badge--colorPrimary RuiBadge__badge--anchorOriginTopRight RuiBadge--dot"></span>
   </div>
+  <div class="RuiBadge m-5">
+    <span class="RuiBadge__Icon"><i class="fas fa-share-square c-blue"></i></span>
+    <span class="RuiBadge__badge RuiBadge__badge--colorPrimary RuiBadge__badge--anchorOriginTopRight">0</span>
+  </div>
+  <div class="RuiBadge m-5">
+    <span class="RuiBadge__Icon"><i class="fas fa-comment-dots c-maroon"></i></span>
+    <span class="RuiBadge__badge RuiBadge__badge--colorSecondary RuiBadge__badge--anchorOriginTopRight">10</span>
+  </div>
+  <div class="RuiBadge m-5">
+    <span class="RuiBadge__Icon"><i class="fas fa-heart c-red"></i></span>
+    <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">100</span>
+  </div>
+
+
+  <h2>Badge on Avatar</h2>
+  <div class="RuiBadge m-5">
+    <div class="RuiBadge__avatar">
+      <img class="RuiBadge__avatar--img" src="https://v4.mui.com/static/images/avatar/1.jpg" alt="Avatar" />
+    </div>
+    <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">10</span>
+  </div>
+  <div class="RuiBadge m-5">
+    <div class="RuiBadge__avatar bg-pink">
+      SK
+    </div>
+    <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight RuiBadge--dot"></span>
+  </div>
+  <div class="RuiBadge m-5">
+    <div class="RuiBadge__avatar">
+      <img class="RuiBadge__avatar--img" src="https://v4.mui.com/static/images/avatar/3.jpg" alt="Avatar" />
+    </div>
+    <span class="RuiBadge__badge RuiBadge__badge--anchorOriginBottomRight RuiBadge--dot"></span>
+  </div>
+
 </body>
 
 </html>

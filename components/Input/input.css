@@ -1,26 +1,56 @@
-.textbox {
-  width: 30rem;
-  height: 3.5rem;
-  border: 2px solid #ccc;
-  border-radius: 1rem;
-  outline: none;
-  padding: 1rem;
-  margin: 1rem;
-  font-size: 1.6rem;
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit;
-  background-color: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.RuiTextField {
+  margin: 0.8rem;
+  width: 25rem;
+  color: var(--text-color-dark);
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  letter-spacing: 0.00938rem;
 }
 
-.error {
-  border: 2px solid rgb(247, 76, 76);
-  color: rgb(247, 76, 76);
+.RuiInputBase {
+  color: inherit;
+  border: 0;
+  width: 100%;
+  outline: none;
+  cursor: text;
+  margin: 0;
+  display: block;
+  min-width: 0;
+  background: none;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
 }
-.error::placeholder {
-  color: rgb(247, 76, 76);
-  opacity: 1;
+
+.RuiInput {
+  font-size: 1.6rem;
+  height: 1.2rem;
+  padding: 0.6rem 0 0.7rem;
+}
+
+.RuiInput--outlained {
+  border: 1px solid var(--grey);
+  padding: 1.8rem 1.4rem;
+  border-radius: 5px;
+}
+.RuiInput--outlained:focus {
+  border: 1px solid var(--text-color-dark);
+}
+
+.RuiInput--standerd {
+  border-bottom: 1px solid var(--grey);
+  padding: 1.8rem 0.5rem;
+}
+.RuiInput--standerd:focus {
+  border-bottom: 1px solid var(--text-color-dark);
+}
+
+.RuiInput--error {
+  border-color: var(--accent-color);
+  background-color: var(--danger-bg);
+}
+
+.RuiInput--success {
+  border-color: var(--success-color);
+  background-color: var(--success-bg);
 }
