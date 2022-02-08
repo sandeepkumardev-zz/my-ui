@@ -1,0 +1,9 @@
+.image__container {
+  display: flex;
+  background-color: var(--grey);
+  justify-content: space-evenly;
+}
+
+.rounded {
+  border-radius: 50%;
+}
