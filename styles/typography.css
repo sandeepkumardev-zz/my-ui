@@ -57,3 +57,7 @@
 .RuiTypography--colorTextSecondary {
   color: var(--dark-grey);
 }
+
+.RuiTypography--gutterBottom {
+  margin-bottom: 0.35em;
+}

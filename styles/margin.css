@@ -151,3 +151,11 @@
   margin-top: calc(5 * var(--margin));
   margin-bottom: calc(5 * var(--margin));
 }
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
