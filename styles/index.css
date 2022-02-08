@@ -6,9 +6,12 @@
 @import "../components/Badge/badge.css";
 @import "../components/Alert/alert.css";
 @import "../components/Button/button.css";
+@import "../components/Card/card.css";
 
+@import "./paper.css";
 @import "./sizes.css";
 @import "./padding.css";
 @import "./margin.css";
 @import "./colors.css";
 @import "./typography.css";
+@import "./modifier.css";
