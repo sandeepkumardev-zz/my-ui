@@ -168,6 +168,10 @@
   color: var(--primary-color-light);
 }
 
+.RuiIconButton--colorInherit {
+  color: inherit;
+}
+
 .RuiIconButton--colorSecondary {
   color: var(--accent-color);
 }
