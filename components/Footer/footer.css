@@ -1,0 +1,9 @@
+.RuiFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
