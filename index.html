@@ -1,15 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My-Ui</title>
-    <link rel="stylesheet" href="styles.css" class="stylesheet" />
-  </head>
-  <body>
-    <div>
-      Home page
-    </div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My-Ui</title>
+  <link rel="stylesheet" href="styles.css" class="stylesheet" />
+</head>
+
+<body>
+  <div class="RuiContainer">
+    <header class="RuiPaper RuiAppbar RuiAppBar--positionFixed RuiAppBar--colorPrimary RuiPaper--elevation3">
+      <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters">
+        <a href="/" class="RuiButtonBase">
+          <h3 class=" RuiTypography__h3 mt-2">My UI</h3>
+        </a>
+        <div class="ml-auto">
+          <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+            <span class="RuiIconButton__Label">
+              <span class="RuiIconButton__Icon">
+                <i class="far fa-sun"></i>
+              </span>
+            </span>
+          </button>
+          <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+            <span class="RuiIconButton__Label">
+              <span class="RuiIconButton__Icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="RuiMainContent RuiPosition--centered">
+      <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary RuiTypography--bold ">My-Ui Components Library</h1>
+      <div class="RuiMainActions">
+        <a href="/docs/" class="RuiButtonBase RuiButton RuiButton--contained RuiButton--containedPrimary">
+          <span class="RuiButton__label RuiTextTransform--capitalize">Getting Started</span>
+        </a>
+        <a href="https://github.com/sandeepkumardev/my-ui" target="_blank"
+          class="RuiButtonBase RuiButton RuiButton--outlined RuiButton--outlinedPrimary">
+          <span class="RuiButton__label RuiTextTransform--capitalize">github</span>
+        </a>
+      </div>
+    </main>
+
+    <footer class="RuiFooter">
+      <span class="RuiTypography__body2">
+        Build and designed by <a href="http://https://github.com/sandeepkumardev"> Sandeepkumardev</a>
+      </span>
+    </footer>
+  </div>
+</body>
+
 </html>
