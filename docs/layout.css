@@ -1,0 +1,38 @@
+.RuiGridLayout {
+  padding-top: 6.4rem;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 240px 1fr 180px;
+  grid-template-areas: "nav main aside";
+}
+aside {
+  grid-area: aside;
+}
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: nav;
+}
+
+@media only screen and (max-width: 1100px) {
+  .RuiGridLayout {
+    grid-template-columns: 1fr 180px;
+    grid-template-areas: "main aside";
+  }
+  nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .RuiGridLayout {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  nav {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+}

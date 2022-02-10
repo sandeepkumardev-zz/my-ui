@@ -1,2 +1,130 @@
-@import "./landing-page.css";
-@import "./getting-started/index.css";
+.RuiAppbar .RuiToggle {
+  display: none;
+}
+
+.RuiNav--borderRight {
+  border-right: 1px solid var(--light-grey);
+}
+.RuiNav--borderLeft {
+  border-left: 1px solid var(--light-grey);
+}
+
+.RuiMain {
+  margin: 8rem 8rem 1rem 8rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5rem;
+}
+
+.RuiHeading .RuiTypography__h1 {
+  margin-bottom: 2rem;
+  font-size: 4.5rem;
+}
+
+.RuiAvatar--Preview {
+  margin: 0.2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.RuiPreview__code {
+  font-size: 1.6rem;
+  margin-top: -2rem;
+}
+
+/* right nav styles */
+.RuiContent {
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  user-select: none;
+  position: fixed;
+}
+.RuiContent__lists {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+.RuiContent__listItem {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: lighter;
+  border: 2px solid transparent;
+}
+.RuiContent__listItem:hover {
+  border-left: 2px solid var(--primary-color);
+}
+
+.RuiCodeBlock {
+  font-size: large;
+  background-color: var(--light-grey);
+  padding: 1rem 1.6rem;
+  border-radius: 0.5rem;
+  max-width: 80rem;
+}
+
+/* toggle drawer model */
+.RuiDrawer__model {
+  position: fixed;
+  z-index: 1300;
+  display: none;
+}
+.RuiBackdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.RuiModel__content {
+  top: 0;
+  height: 100%;
+  position: fixed;
+  width: 24rem;
+  background-color: var(--text-color);
+}
+
+.RuiModel__content .RuiDrawer {
+  overflow-x: hidden;
+}
+
+.RuiModel__content .RuiDrawer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--light-grey);
+}
+
+@media only screen and (max-width: 1100px) {
+  .RuiAppbar .RuiToggle {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .RuiDrawer__model {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .RuiMain {
+    margin: 5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .RuiMain {
+    margin: 3rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .RuiMain {
+    margin: 1rem;
+  }
+}
