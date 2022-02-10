@@ -12,7 +12,7 @@
 <body>
     <header class="RuiPaper RuiAppbar RuiAppBar--positionFixed RuiAppBar--colorPrimary RuiPaper--elevation3">
         <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters">
-            <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5">
+            <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5 RuiToggle">
                 <span class="RuiIconButton__Label">
                     <span class="RuiIconButton__Icon">
                         <i class="fas fa-bars"></i>
@@ -66,37 +66,54 @@
         </nav>
 
         <main class="RuiMain">
-            <section class="RuiHeading" id="geeting-started">
-                <h1 class="RuiTypography__h1">Installation</h1>
+            <section class="RuiHeading" id="installation">
+                <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">Installation</h1>
                 <p class="RuiTypography__body1 RuiTypography--lighter">
-                    To get started with My-UI you need to link it's css inside head of
-                    your html file.
+                    To get started with My-UI you need to link it's css inside head of your html file.
                 </p>
             </section>
 
-            <h5 class="RuiTypography__h5 mt-5 pt-5">Two ways to use this -</h5>
+            <h5 class="RuiTypography__h5  RuiTypography--colorTextPrimary mt-5 pt-5">Two ways to use this -</h5>
             <section class="RuiUsage_1 m-5" id="RuiUsage_1">
-                <code class="RuiTypography__h3"> Usage 1 </code>
+                <code class="RuiTypography__h3 RuiTypography--colorTextPrimary"> Usage 1 </code>
                 <p class="RuiTypography__body1 RuiTypography--lighter">
                     If you wish to create your project based on this ui, then you can
                     import this link. It will change your root css in browser.
                 </p>
+                <div class="RuiCodeBlock m-5">
+                    <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">
+                        &lt;link rel="stylesheet" href="https://myui-0.netlify.app/static/css/root.css"&gt;
+                    </p>
+                </div>
+                <p class="RuiTypography__body1 RuiTypography--lighter">
+                    or, import this in CSS file.
+                </p>
+                <div class="RuiCodeBlock m-5">
+                    <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">
+                        @import url(https://myui-0.netlify.app/static/css/root.css);
+                    </p>
+                </div>
             </section>
 
             <section class="RuiUsage_1 m-5" id="RuiUsage_2">
-                <code class="RuiTypography__h3"> Usage 2 </code>
+                <code class="RuiTypography__h3 RuiTypography--colorTextPrimary"> Usage 2 </code>
                 <p class="RuiTypography__body1 RuiTypography--lighter">
-                    or, wanna use only components, then you can import this link.
+                    If you wanna use only components, then you can import this link.
                 </p>
+                <div class="RuiCodeBlock m-5">
+                    <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">
+                        &lt;link rel="stylesheet" href="https://myui-0.netlify.app/static/css/index.css"&gt;
+                    </p>
+                </div>
+                <p class="RuiTypography__body1 RuiTypography--lighter">
+                    or, import this in CSS file.
+                </p>
+                <div class="RuiCodeBlock m-5">
+                    <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">
+                        @import url(https://myui-0.netlify.app/static/css/index.css);
+                    </p>
+                </div>
             </section>
-
-            <pre class="RuiCodeBlock">
-                <code class="RuiCodeBlock__code">
-                    &lt;head&gt;
-                        &lt;link rel="stylesheet" href="../../styles.css"&gt;
-                    &lt;/head&gt;
-                </code>
-            </pre>
 
             <footer class="RuiFooter">
                 <span class="RuiTypography__body2">
@@ -107,7 +124,18 @@
             </footer>
         </main>
 
-        <aside class="RuiNav--borderLeft"></aside>
+        <aside class="RuiPaper RuiNav--borderLeft">
+            <div class="RuiContent">
+                <div class="RuiContent__title">
+                    Contents -
+                </div>
+                <div class="RuiContent__lists">
+                    <a class="RuiContent__listItem" href="#installation">Installation</a>
+                    <a class="RuiContent__listItem" href="#RuiUsage_1">Usage 1</a>
+                    <a class="RuiContent__listItem" href="#RuiUsage_2">Usage 2</a>
+                </div>
+            </div>
+        </aside>
     </div>
 </body>
 
