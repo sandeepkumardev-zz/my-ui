@@ -1,4 +1,4 @@
-const toast = document.getElementById('alert__toast')
+const toast = document.getElementById('ruiToast__js')
 
 function showToast() {
     toast.style.opacity = 1;

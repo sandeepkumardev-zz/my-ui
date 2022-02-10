@@ -57,3 +57,31 @@
 .RuiTypography--colorTextSecondary {
   color: var(--dark-grey);
 }
+
+.RuiTypography--colorTextPrimary {
+  color: var(--primary-color-light);
+}
+
+.RuiTypography--colorTextInherit {
+  color: inherit;
+}
+
+.RuiTypography--gutterBottom {
+  margin-bottom: 0.35em;
+}
+
+.RuiTextTransform--capitalize {
+  text-transform: capitalize;
+}
+
+.RuiTextTransform--lowercase {
+  text-transform: lowercase;
+}
+
+.RuiTypography--bold {
+  font-weight: bold;
+}
+
+.RuiTypography--lighter {
+  font-weight: lighter;
+}

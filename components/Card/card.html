@@ -75,15 +75,11 @@
                 <img class="RuiCard__media RuiCard__media--img" height="150" src="http://placeimg.com/640/480/food"
                     alt="">
 
-                <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit rss006">
-                    <span class="RuiIconButton__Label">
-                        <span class="RuiBadge">
-                            <span class="RuiIconButton__Icon">
-                                <i class="fas fa-heart c-red"></i>
-                            </span>
-                            <span class="RuiBadge__badge RuiBadge--anchorOriginTopRightRectangular bg-blue">0</span>
-                        </span>
-                    </span>
+                <button class="RuiButtonBase RuiIconButton rss006">
+                    <div class="RuiBadge">
+                        <span class="RuiBadge__Icon"><i class="fas fa-heart c-red"></i></span>
+                        <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">10</span>
+                    </div>
                 </button>
 
                 <div class="RuiCard__content">
@@ -154,7 +150,9 @@
                 </div>
             </button>
             <div class="RuiCard__actions rss009">
-                <button class="btn btn__outline btn__outline--secondary">Dismiss</button>
+                <button class="RuiButtonBase RuiButton RuiButton--text RuiButton--textSecondary">
+                    <span class="RuiButton__label">Dismiss</span>
+                </button>
             </div>
         </div>
     </div>

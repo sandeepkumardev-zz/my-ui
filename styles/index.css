@@ -1,6 +1,7 @@
 /*************** Component Imports ***************/
 @import "./variable.css";
 
+@import "../components/Paper/paper.css";
 @import "../components/Navbar/navbar.css";
 @import "../components/Avatar/avatar.css";
 @import "../components/Badge/badge.css";
@@ -9,8 +10,9 @@
 @import "../components/Input/input.css";
 @import "../components/Image/image.css";
 @import "../components/Card/card.css";
+@import "../components/Footer/footer.css";
+@import "../components/Drawer/drawer.css";
 
-@import "./paper.css";
 @import "./sizes.css";
 @import "./padding.css";
 @import "./margin.css";
