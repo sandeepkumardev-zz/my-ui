@@ -45,6 +45,7 @@ nav {
   background-color: var(--light-grey);
   padding: 1rem 1.6rem;
   border-radius: 0.5rem;
+  max-width: 80rem;
 }
 
 /* right nav styles */
@@ -97,6 +98,9 @@ nav {
   aside {
     display: none;
   }
+  .RuiDrawer__model {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -113,4 +117,37 @@ nav {
   .RuiMain {
     margin: 1rem;
   }
+}
+
+.RuiDrawer__model {
+  position: fixed;
+  z-index: 1300;
+  display: none;
+}
+.RuiBackdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.RuiModel__content {
+  top: 0;
+  height: 100%;
+  position: fixed;
+  width: 24rem;
+  background-color: var(--text-color);
+}
+
+.RuiModel__content .RuiDrawer {
+  overflow-x: hidden;
+}
+
+.RuiModel__content .RuiDrawer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--light-grey);
 }
