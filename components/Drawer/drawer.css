@@ -17,13 +17,17 @@
   cursor: pointer;
   font-weight: lighter;
 }
+.RuiLists .RuiList__item {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
 .RuiList__item:hover {
   background-color: var(--grey-highlight);
 }
 .RuiList__item:active {
   background-color: var(--primary-color-highlight);
 }
-.RuiList__item--selected {
+.RuiLists .RuiList__item--selected {
   background-color: var(--primary-color-highlight);
   color: var(--primary-color-light);
   font-weight: normal;
