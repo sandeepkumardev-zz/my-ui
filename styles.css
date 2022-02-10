@@ -1,6 +1,6 @@
 @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
 /* @import url(https://myui-0.netlify.app/static/css/root.css); */
-@import "./docs/docs.css";
+@import "./docs/index.css";
 @import "./styles/index.css";
 
 /* reset CSS  */
@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  transition: all 0.1s ease-in;
+  /* transition: all 0.1s ease-in; */
 }
 
 body {
