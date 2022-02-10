@@ -58,6 +58,10 @@
   color: var(--dark-grey);
 }
 
+.RuiTypography--colorAccent {
+  color: var(--accent-color);
+}
+
 .RuiTypography--colorDanger {
   color: var(--danger-color);
 }
