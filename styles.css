@@ -1,6 +1,7 @@
 @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
-@import "./styles/index.css";
+/* @import url(https://myui-0.netlify.app/static/css/root.css); */
 @import "./docs/docs.css";
+@import "./styles/index.css";
 
 /* reset CSS  */
 *,
