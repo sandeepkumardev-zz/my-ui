@@ -55,7 +55,7 @@
 }
 
 .RuiTypography--colorTextSecondary {
-  color: var(--accent-color);
+  color: var(--dark-grey);
 }
 
 .RuiTypography--colorTextPrimary {
