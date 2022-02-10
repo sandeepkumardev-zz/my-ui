@@ -58,6 +58,10 @@
   color: var(--dark-grey);
 }
 
+.RuiTypography--colorDanger {
+  color: var(--danger-color);
+}
+
 .RuiTypography--colorTextPrimary {
   color: var(--primary-color-light);
 }
