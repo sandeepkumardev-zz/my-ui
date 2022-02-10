@@ -1,7 +1,10 @@
 .RuiDrawer {
-  width: 24rem;
   user-select: none;
   padding: 1.2rem;
+  position: fixed;
+  width: 24rem;
+  height: 100vh;
+  overflow: scroll;
 }
 .RuiList__item {
   margin-left: 0.5rem;
