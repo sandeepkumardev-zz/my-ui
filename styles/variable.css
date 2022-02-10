@@ -1,9 +1,7 @@
 :root {
-  /* 1rem = 16px */
-  --default-font-size: 62.5%; /* 10px */
-
   --primary-color: #3c03b1;
   --primary-color-light: #7836fc;
+  /* --primary-color-highlight: rgb(201, 194, 255); */
   --primary-color-dark: #3702a1;
   --primary-color-highlight: #ede4ff;
   --secondary-color: #f9f9f9!;
