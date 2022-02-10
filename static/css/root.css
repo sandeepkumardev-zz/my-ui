@@ -1,0 +1,1510 @@
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+
+/* reset CSS  */
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.1s ease-in;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 59%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 56%;
+  }
+}
+
+/* root variables */
+:root {
+  --primary-color: #3c03b1;
+  --primary-color-light: #7836fc;
+  /* --primary-color-highlight: rgb(201, 194, 255); */
+  --primary-color-dark: #3702a1;
+  --primary-color-highlight: #ede4ff;
+  --secondary-color: #f9f9f9!;
+  --secondary-color-dark: #dedede;
+  --accent-color: #df1a60;
+  --accent-color-highlight: #fcdde8;
+
+  --text-color: white;
+  --text-color-dark: #202020;
+
+  --success-color: #02ad86;
+  --success-bg: #03c99b1a;
+  --success-bg-dark: #01a17c1a;
+  --info-color: #2cbaee;
+  --info-bg: #5dc4eb1a;
+  --info-bg-dark: #37b9e91a;
+  --warning-color: #ffc95c;
+  --warning-bg: #ffc95c1a;
+  --warning-bg: #fcbc3d1a;
+  --danger-color: #fa7178;
+  --danger-bg: #fa71781a;
+  --danger-bg: #f548511a;
+
+  --dark-grey: rgb(100, 100, 100);
+  --grey: rgb(150, 150, 150);
+  --grey-highlight: rgb(150, 150, 150, 0.2);
+  --light-grey: rgb(240, 240, 240);
+  --default-box-shadow: 0px 0px 6px -2px grey;
+
+  --font-light: 300;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --padding: 0.25rem;
+  --margin: 0.25rem;
+}
+
+/* .................................................paper styles............................................ */
+.RuiPaper {
+  color: var(--text-color-dark);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: var(--secondary-color);
+}
+
+.RuiPaper--outlined {
+  border: 1px solid var(--text-color-dark);
+}
+
+.RuiPaper--rounded {
+  border-radius: 4px;
+}
+
+.RuiPaper--elevation0 {
+  box-shadow: none;
+}
+.RuiPaper--elevation1 {
+  box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation2 {
+  box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation3 {
+  box-shadow: 0px 3px 3px -3px rgb(0 0 0 / 20%),
+    0px 3px 3px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation4 {
+  box-shadow: 0px 4px 4px -4px rgb(0 0 0 / 20%),
+    0px 4px 4px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+/* .................................................alert styles............................................ */
+.RuiAlert {
+  display: flex;
+  padding: 6px 16px;
+  font-size: 1.8rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-radius: 4px;
+  letter-spacing: 0.01071em;
+  background-color: transparent;
+}
+
+.RuiAlert--standardError {
+  color: var(--danger-color);
+  background-color: var(--danger-bg);
+}
+
+.RuiAlert__icon {
+  display: flex;
+  opacity: 0.9;
+  padding: 0.7rem 0;
+  font-size: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+.RuiAlert__message {
+  padding: 0.8rem 0;
+}
+
+.RuiAlert--standardWarning {
+  color: var(--warning-color);
+  background-color: var(--warning-bg);
+}
+.RuiAlert--standardInfo {
+  color: var(--info-color);
+  background-color: var(--info-bg);
+}
+.RuiAlert--standardSuccess {
+  color: var(--success-color);
+  background-color: var(--success-bg);
+}
+
+#RuiAlert__title {
+  margin-top: -2px;
+  font-weight: 700;
+}
+
+.RuiAlert__actions {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: -8px;
+  padding-left: 16px;
+}
+
+/* .................................................avatar styles............................................ */
+.RuiAvatar__items {
+  display: flex;
+}
+
+.RuiAvatar {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.8rem;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  user-select: none;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.RuiAvatar--img {
+  color: transparent;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  text-align: center;
+  text-indent: 10000px;
+}
+
+.RuiAvatar--colorDefault {
+  color: var(--text-color);
+  background-color: var(--grey);
+}
+.RuiAvatar--colorPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+.RuiAvatar--colorSecondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.RuiAvatarGroup__avatar {
+  border: 2px solid var(--text-color);
+  margin-left: -8px;
+}
+.RuiAvatarGroup__avatar:first-child {
+  margin-left: 0;
+}
+
+/*.................................................badge styles............................................ */
+.RuiBadge {
+  display: inline-flex;
+  position: relative;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.RuiBadge__Icon {
+  fill: currentColor;
+  width: 2.5rem;
+  display: inline-block;
+  font-size: 2.4rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.RuiBadge__avatar {
+  color: var(--text-color);
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.RuiBadge__avatar--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.RuiBadge__badge {
+  color: var(--text-color);
+  background-color: var(--text-color-dark);
+  height: 2rem;
+  display: flex;
+  padding: 0 0.3rem;
+  z-index: 1;
+  position: absolute;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  min-width: 2rem;
+  box-sizing: border-box;
+  transition: transform 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  align-content: center;
+  border-radius: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid var(--text-color);
+}
+
+.RuiBadge__badge--colorPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+.RuiBadge__badge--colorSecondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.RuiBadge--dot {
+  height: 8px;
+  padding: 0;
+  min-width: 8px;
+  border-radius: 4px;
+}
+
+.RuiBadge__badge--anchorOriginTopRight {
+  top: 0;
+  right: 0;
+  transform: scale(1) translate(50%, -50%);
+  transform-origin: 100% 0%;
+}
+.RuiBadge__badge--anchorOriginTopRight.RuiBadge--dot {
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+.RuiBadge__badge--anchorOriginBottomRight {
+  bottom: 0;
+  right: 0;
+  transform: scale(1) translate(50%, -50%);
+  transform-origin: 100% 0%;
+}
+
+/* .................................................button styles............................................ */
+/* basic style for buttons */
+.RuiButtonBase {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.RuiButtonBase.Rui__disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.RuiButton {
+  color: var(--text-color-dark);
+  padding: 0.6rem 1.6rem;
+  font-size: 1.6rem;
+  min-width: 6.4rem;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+/* style for contained buttons */
+.RuiButton--contained {
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  background-color: #e0e0e0;
+}
+
+.RuiButton--containedPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color-light);
+}
+
+.RuiButton--containedSecondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+.RuiButton--contained.Rui__disabled {
+  color: var(--dark-grey);
+  box-shadow: none;
+  background-color: var(--grey-highlight);
+}
+
+/* style for text buttons */
+.RuiButton--text {
+  padding: 0.4rem 0.8rem;
+}
+.RuiButton--text:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiButton--textPrimary {
+  color: var(--primary-color);
+}
+.RuiButton--textPrimary:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+.RuiButton--textSecondary {
+  color: var(--accent-color);
+}
+.RuiButton--textSecondary:hover {
+  background-color: var(--accent-color-highlight);
+}
+
+.RuiButton--text.Rui__disabled {
+  color: var(--dark-grey);
+}
+
+/* style for outlined buttons */
+.RuiButton--outlined {
+  border: 1px solid var(--dark-grey);
+  padding: 0.5rem 1.5rem;
+}
+.RuiButton--outlined:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiButton--outlinedPrimary {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.RuiButton--outlinedPrimary:hover {
+  background-color: var(--primary-color-highlight);
+}
+
+.RuiButton--outlinedSecondary {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+.RuiButton--outlinedSecondary:hover {
+  background-color: var(--accent-color-highlight);
+}
+
+.RuiButton--outlined.Rui__disabled {
+  color: var(--dark-grey);
+  border: 1px solid var(--dark-grey);
+}
+
+.RuiButton__label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.RuiButton--textSizeSmall {
+  padding: 4px 5px;
+  font-size: 1.35rem;
+}
+
+/* style for Icon buttons */
+.RuiIconButton {
+  flex: 0 0 auto;
+  color: var(--text-color-dark);
+  padding: 1.2rem;
+  overflow: visible;
+  font-size: 2.4rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.RuiIconButton:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiIconButton__Icon {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 2.4rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.RuiIconButton__Label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.RuiIconButton--colorPrimary {
+  color: var(--primary-color-light);
+}
+
+.RuiIconButton--colorInherit {
+  color: inherit;
+}
+
+.RuiIconButton--colorSecondary {
+  color: var(--accent-color);
+}
+
+.RuiIconButton.Rui__disabled {
+  color: var(--dark-grey);
+}
+
+/* style for float button */
+.RuiFloatButton {
+  color: var(--text-color-dark);
+  width: 5.6rem;
+  height: 5.6rem;
+  padding: 0;
+  font-size: 2.4rem;
+  min-width: 0;
+  box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
+    0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+  box-sizing: border-box;
+  min-height: 3.6rem;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 50%;
+  letter-spacing: 0.02857rem;
+  text-transform: uppercase;
+  background-color: var(--grey-highlight);
+}
+
+.RuiFloatButton--primary {
+  color: var(--text-color);
+  background-color: var(--primary-color-light);
+}
+
+.RuiFloatButton--secondary {
+  color: var(--text-color);
+  background-color: var(--accent-color);
+}
+
+/* style for text with icon buttons */
+.RuiButton__startIcon {
+  display: inherit;
+  margin-left: -4px;
+  margin-right: 8px;
+}
+
+/* ............................................card styles............................................ */
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.RuiCard {
+  min-width: 27rem;
+  max-width: 37rem;
+  overflow: hidden;
+}
+
+.RuiCard__content {
+  padding: 1.6rem;
+}
+
+.RuiCard__Action__Area {
+  width: 100%;
+  display: block;
+  text-align: inherit;
+}
+.RuiCard__Action__Area:hover {
+  background-color: var(--light-grey);
+  transition: background-color 300ms;
+}
+
+.RuiCard__media {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.RuiCard__media--img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.RuiCard__actions {
+  padding: 1rem;
+  display: flex;
+}
+
+/* ............................................drawer styles............................................ */
+.RuiDrawer {
+  width: 24rem;
+  user-select: none;
+  padding: 1.2rem;
+}
+.RuiList__item {
+  margin-left: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.RuiList__item:hover {
+  background-color: var(--grey-highlight);
+}
+.RuiList__item:active {
+  background-color: var(--primary-color-highlight);
+}
+.RuiList__item--selected {
+  background-color: var(--primary-color-highlight);
+  color: var(--primary-color-light);
+  font-weight: normal;
+  box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.RuiList__item--selected:hover {
+  background-color: var(--primary-color-highlight);
+  cursor: default;
+}
+
+/* ............................................footer styles............................................ */
+.RuiFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  /* width: 100%; */
+}
+
+/* ............................................image styles............................................ */
+.RuiImage {
+  width: 100%;
+  height: 100%;
+}
+
+.RuiImage--rounded {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ............................................input styles............................................ */
+.RuiTextField {
+  margin: 0.8rem;
+  width: 25rem;
+  color: var(--text-color-dark);
+  display: inline-flex;
+  position: relative;
+  box-sizing: border-box;
+  letter-spacing: 0.00938rem;
+}
+
+.RuiInputBase {
+  color: inherit;
+  border: 0;
+  width: 100%;
+  outline: none;
+  cursor: text;
+  margin: 0;
+  display: block;
+  min-width: 0;
+  background: none;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+}
+
+.RuiInput {
+  font-size: 1.6rem;
+  height: 1.2rem;
+  padding: 0.6rem 0 0.7rem;
+}
+
+.RuiInput--outlained {
+  border: 1px solid var(--grey);
+  padding: 1.8rem 1.4rem;
+  border-radius: 5px;
+}
+.RuiInput--outlained:focus {
+  border: 1px solid var(--text-color-dark);
+}
+
+.RuiInput--standerd {
+  border-bottom: 1px solid var(--grey);
+  padding: 1.8rem 0.5rem;
+}
+.RuiInput--standerd:focus {
+  border-bottom: 1px solid var(--text-color-dark);
+}
+
+.RuiInput--error {
+  border-color: var(--accent-color);
+  background-color: var(--danger-bg);
+}
+
+.RuiInput--success {
+  border-color: var(--success-color);
+  background-color: var(--success-bg);
+}
+
+/* ............................................navbar styles............................................ */
+.RuiAppbar {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+.RuiAppBar--colorPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color-light);
+}
+
+.RuiAppBar--positionStatic {
+  position: static;
+}
+.RuiAppBar--positionFixed {
+  position: fixed;
+}
+
+.RuiToolbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.RuiToolbar--regular {
+  min-height: 5.6rem;
+}
+
+.RuiToolbar--gutters {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--regular {
+    min-height: 6.4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--gutters {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+/* ............................................paper styles............................................ */
+.RuiPaper {
+  color: var(--text-color-dark);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+
+.RuiPaper--outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.RuiPaper--rounded {
+  border-radius: 4px;
+}
+
+.RuiPaper--elevation0 {
+  box-shadow: none;
+}
+.RuiPaper--elevation1 {
+  box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation2 {
+  box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation3 {
+  box-shadow: 0px 3px 3px -3px rgb(0 0 0 / 20%),
+    0px 3px 3px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+.RuiPaper--elevation4 {
+  box-shadow: 0px 4px 4px -4px rgb(0 0 0 / 20%),
+    0px 4px 4px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+/* ............................................Typography styles............................................ */
+.RuiTypography__h1 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
+}
+
+.RuiTypography__body1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938rem;
+}
+
+.RuiTypography__body2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071rem;
+}
+
+.RuiTypography--colorTextSecondary {
+  color: var(--accent-color);
+}
+
+.RuiTypography--colorTextPrimary {
+  color: var(--primary-color-light);
+}
+
+.RuiTypography--colorTextInherit {
+  color: inherit;
+}
+
+.RuiTypography--gutterBottom {
+  margin-bottom: 0.35em;
+}
+
+.RuiTextTransform--capitalize {
+  text-transform: capitalize;
+}
+
+.RuiTextTransform--lowercase {
+  text-transform: lowercase;
+}
+
+.RuiTypography--bold {
+  font-weight: bold;
+}
+
+.RuiTypography--lighter {
+  font-weight: lighter;
+}
+
+/* ............................................sizes styles............................................ */
+.s-1 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.s-2 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.s-3 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.s-4 {
+  width: 4rem;
+  height: 4rem;
+}
+
+.s-5 {
+  width: 5rem;
+  height: 5rem;
+}
+
+.s-6 {
+  width: 6rem;
+  height: 6rem;
+}
+
+.s-7 {
+  width: 7rem;
+  height: 7rem;
+}
+
+.s-8 {
+  width: 8rem;
+  height: 8rem;
+}
+
+.s-9 {
+  width: 9rem;
+  height: 9rem;
+}
+
+.s-10 {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* ............................................padding styles............................................ */
+.p-0 {
+  padding: 0px;
+}
+
+.p-1 {
+  padding: calc(1 * var(--padding));
+}
+
+.p-2 {
+  padding: calc(2 * var(--padding));
+}
+
+.p-3 {
+  padding: calc(3 * var(--padding));
+}
+
+.p-4 {
+  padding: calc(4 * var(--padding));
+}
+
+.p-5 {
+  padding: calc(5 * var(--padding));
+}
+
+.pt-1 {
+  padding-top: calc(1 * var(--padding));
+}
+
+.pt-2 {
+  padding-top: calc(2 * var(--padding));
+}
+
+.pt-3 {
+  padding-top: calc(3 * var(--padding));
+}
+
+.pt-4 {
+  padding-top: calc(4 * var(--padding));
+}
+
+.pt-5 {
+  padding-top: calc(5 * var(--padding));
+}
+
+.pb-1 {
+  padding-bottom: calc(1 * var(--padding));
+}
+
+.pb-2 {
+  padding-bottom: calc(2 * var(--padding));
+}
+
+.pb-3 {
+  padding-bottom: calc(3 * var(--padding));
+}
+
+.pb-4 {
+  padding-bottom: calc(4 * var(--padding));
+}
+
+.pb-5 {
+  padding-bottom: calc(5 * var(--padding));
+}
+
+.pl-1 {
+  padding-left: calc(1 * var(--padding));
+}
+
+.pl-2 {
+  padding-left: calc(2 * var(--padding));
+}
+
+.pl-3 {
+  padding-left: calc(3 * var(--padding));
+}
+
+.pl-4 {
+  padding-left: calc(4 * var(--padding));
+}
+
+.pl-5 {
+  padding-left: calc(5 * var(--padding));
+}
+
+.pr-1 {
+  padding-right: calc(1 * var(--padding));
+}
+
+.pr-2 {
+  padding-right: calc(2 * var(--padding));
+}
+
+.pr-3 {
+  padding-right: calc(3 * var(--padding));
+}
+
+.pr-4 {
+  padding-right: calc(4 * var(--padding));
+}
+
+.pr-5 {
+  padding-right: calc(5 * var(--padding));
+}
+
+.px-1 {
+  padding-left: calc(1 * var(--padding));
+  padding-right: calc(1 * var(--padding));
+}
+
+.px-2 {
+  padding-left: calc(2 * var(--padding));
+  padding-right: calc(2 * var(--padding));
+}
+
+.px-3 {
+  padding-left: calc(3 * var(--padding));
+  padding-right: calc(3 * var(--padding));
+}
+
+.px-4 {
+  padding-left: calc(4 * var(--padding));
+  padding-right: calc(4 * var(--padding));
+}
+
+.px-5 {
+  padding-left: calc(5 * var(--padding));
+  padding-right: calc(5 * var(--padding));
+}
+
+.py-1 {
+  padding-top: calc(1 * var(--padding));
+  padding-bottom: calc(1 * var(--padding));
+}
+
+.py-2 {
+  padding-top: calc(2 * var(--padding));
+  padding-bottom: calc(2 * var(--padding));
+}
+
+.py-3 {
+  padding-top: calc(3 * var(--padding));
+  padding-bottom: calc(3 * var(--padding));
+}
+
+.py-4 {
+  padding-top: calc(4 * var(--padding));
+  padding-bottom: calc(4 * var(--padding));
+}
+
+.py-5 {
+  padding-top: calc(5 * var(--padding));
+  padding-bottom: calc(5 * var(--padding));
+}
+
+/* ............................................margin styles............................................ */
+.m-0 {
+  margin: 0px;
+}
+
+.m-1 {
+  margin: calc(1 * var(--margin));
+}
+
+.m-2 {
+  margin: calc(2 * var(--margin));
+}
+
+.m-3 {
+  margin: calc(3 * var(--margin));
+}
+
+.m-4 {
+  margin: calc(4 * var(--margin));
+}
+
+.m-5 {
+  margin: calc(5 * var(--margin));
+}
+
+.mt-1 {
+  margin-top: calc(1 * var(--margin));
+}
+
+.mt-2 {
+  margin-top: calc(2 * var(--margin));
+}
+
+.mt-3 {
+  margin-top: calc(3 * var(--margin));
+}
+
+.mt-4 {
+  margin-top: calc(4 * var(--margin));
+}
+
+.mt-5 {
+  margin-top: calc(5 * var(--margin));
+}
+
+.mb-1 {
+  margin-bottom: calc(1 * var(--margin));
+}
+
+.mb-2 {
+  margin-bottom: calc(2 * var(--margin));
+}
+
+.mb-3 {
+  margin-bottom: calc(3 * var(--margin));
+}
+
+.mb-4 {
+  margin-bottom: calc(4 * var(--margin));
+}
+
+.mb-5 {
+  margin-bottom: calc(5 * var(--margin));
+}
+
+.ml-1 {
+  margin-left: calc(1 * var(--margin));
+}
+
+.ml-2 {
+  margin-left: calc(2 * var(--margin));
+}
+
+.ml-3 {
+  margin-left: calc(3 * var(--margin));
+}
+
+.ml-4 {
+  margin-left: calc(4 * var(--margin));
+}
+
+.ml-5 {
+  margin-left: calc(5 * var(--margin));
+}
+
+.mr-1 {
+  margin-right: calc(1 * var(--margin));
+}
+
+.mr-2 {
+  margin-right: calc(2 * var(--margin));
+}
+
+.mr-3 {
+  margin-right: calc(3 * var(--margin));
+}
+
+.mr-4 {
+  margin-right: calc(4 * var(--margin));
+}
+
+.mr-5 {
+  margin-right: calc(5 * var(--margin));
+}
+
+.mx-1 {
+  margin-left: calc(1 * var(--margin));
+  margin-right: calc(1 * var(--margin));
+}
+
+.mx-2 {
+  margin-left: calc(2 * var(--margin));
+  margin-right: calc(2 * var(--margin));
+}
+
+.mx-3 {
+  margin-left: calc(3 * var(--margin));
+  margin-right: calc(3 * var(--margin));
+}
+
+.mx-4 {
+  margin-left: calc(4 * var(--margin));
+  margin-right: calc(4 * var(--margin));
+}
+
+.mx-5 {
+  margin-left: calc(5 * var(--margin));
+  margin-right: calc(5 * var(--margin));
+}
+
+.my-1 {
+  margin-top: calc(1 * var(--margin));
+  margin-bottom: calc(1 * var(--margin));
+}
+
+.my-2 {
+  margin-top: calc(2 * var(--margin));
+  margin-bottom: calc(2 * var(--margin));
+}
+
+.my-3 {
+  margin-top: calc(3 * var(--margin));
+  margin-bottom: calc(3 * var(--margin));
+}
+
+.my-4 {
+  margin-top: calc(4 * var(--margin));
+  margin-bottom: calc(4 * var(--margin));
+}
+
+.my-5 {
+  margin-top: calc(5 * var(--margin));
+  margin-bottom: calc(5 * var(--margin));
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+/* ............................................color styles............................................ */
+.c-pink {
+  color: #e91e63;
+}
+
+.c-blue {
+  color: #2196f3;
+}
+
+.c-red {
+  color: #f44336;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-gray {
+  color: #afafaf;
+}
+
+.c-black {
+  color: #000;
+}
+
+.c-purple {
+  color: #9c27b0;
+}
+
+.c-green {
+  color: #4caf50;
+}
+
+.c-yellow {
+  color: #ffeb3b;
+}
+
+.c-maroon {
+  color: #800000;
+}
+
+.c-voilet {
+  color: #673ab7;
+}
+
+.c-brown {
+  color: #795548;
+}
+
+.c-azure {
+  color: #03a9f4;
+}
+
+.c-ivory {
+  color: #f5f5f5;
+}
+
+.c-teal {
+  color: #009688;
+}
+
+.c-silver {
+  color: #9e9e9e;
+}
+
+.c-navyblue {
+  color: #303f9f;
+}
+
+.c-peagreen {
+  color: #4caf50;
+}
+
+.c-orange {
+  color: #ff9800;
+}
+
+.c-charcoal {
+  color: #3e3e3e;
+}
+
+.c-aquamarine {
+  color: #2e8b57;
+}
+
+.c-coral {
+  color: #ff7f50;
+}
+
+.c-fuchsia {
+  color: #ff00ff;
+}
+
+.c-wheat {
+  color: #f5deb3;
+}
+
+.c-khaki {
+  color: #f0e68c;
+}
+
+.c-lime {
+  color: #ccff00;
+}
+
+.c-crimson {
+  color: #dc143c;
+}
+
+.c-hotpink {
+  color: #ff69b4;
+}
+
+.c-magenta {
+  color: #ff00ff;
+}
+
+.c-olden {
+  color: #cd853f;
+}
+.c-plum {
+  color: #dda0dd;
+}
+
+.c-olive {
+  color: #808000;
+}
+
+.c-cyan {
+  color: #00ffff;
+}
+
+.bg-pink {
+  background-color: #e91e63;
+}
+
+.bg-blue {
+  background-color: #2196f3;
+}
+
+.bg-red {
+  background-color: #f44336;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-gray {
+  background-color: #afafaf;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-purple {
+  background-color: #9c27b0;
+}
+
+.bg-green {
+  background-color: #4caf50;
+}
+
+.bg-yellow {
+  background-color: #ffeb3b;
+}
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.bg-voilet {
+  background-color: #673ab7;
+}
+
+.bg-brown {
+  background-color: #795548;
+}
+
+.bg-azure {
+  background-color: #03a9f4;
+}
+
+.bg-ivory {
+  background-color: #f5f5f5;
+}
+
+.bg-teal {
+  background-color: #009688;
+}
+
+.bg-silver {
+  background-color: #9e9e9e;
+}
+
+.bg-navyblue {
+  background-color: #303f9f;
+}
+
+.bg-peagreen {
+  background-color: #4caf50;
+}
+
+.bg-orange {
+  background-color: #ff9800;
+}
+
+.bg-charcoal {
+  background-color: #3e3e3e;
+}
+
+.bg-aquamarine {
+  background-color: #2e8b57;
+}
+
+.bg-coral {
+  background-color: #ff7f50;
+}
+
+.bg-fuchsia {
+  background-color: #ff00ff;
+}
+
+.bg-wheat {
+  background-color: #f5deb3;
+}
+
+.bg-khaki {
+  background-color: #f0e68c;
+}
+
+.bg-lime {
+  background-color: #ccff00;
+}
+
+.bg-crimson {
+  background-color: #dc143c;
+}
+
+.bg-hotpink {
+  background-color: #ff69b4;
+}
+
+.bg-magenta {
+  background-color: #ff00ff;
+}
+
+.bg-olden {
+  background-color: #cd853f;
+}
+.bg-plum {
+  background-color: #dda0dd;
+}
+
+.bg-olive {
+  background-color: #808000;
+}
+
+.bg-cyan {
+  background-color: #00ffff;
+}
