@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentions</title>
+    <link rel="stylesheet" href="../../styles.css" />
+</head>
+
+<body>
+    <header class="RuiPaper RuiAppbar RuiAppBar--positionFixed RuiAppBar--colorPrimary RuiPaper--elevation3">
+        <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters">
+            <button onclick="showDrawerModel()"
+                class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5 RuiToggle">
+                <span class="RuiIconButton__Label">
+                    <span class="RuiIconButton__Icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </span>
+            </button>
+            <a href="/" class="RuiButtonBase">
+                <h3 class="RuiTypography__h3 mt-2">My UI</h3>
+            </a>
+            <div class="ml-auto">
+                <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+                    <span class="RuiIconButton__Label">
+                        <span class="RuiIconButton__Icon">
+                            <i class="far fa-sun"></i>
+                        </span>
+                    </span>
+                </button>
+                <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+                    <span class="RuiIconButton__Label">
+                        <span class="RuiIconButton__Icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="RuiGridLayout">
+        <nav class="RuiPaper RuiNav--borderRight">
+            <div class="RuiDrawer">
+                <div class="RuiLists">
+                    <a href="/docs/getting-started/" class="RuiList__item">
+                        Getting Started
+                    </a>
+                    <h4 class="RuiTypography__h4 RuiList__title mt-5">Elements</h4>
+                    <a href="/docs/avatar/" class="RuiList__item">Avatar</a>
+                    <a href="/docs/badge/" class="RuiList__item">Badge</a>
+                    <a href="/docs/button/" class="RuiList__item">Button</a>
+                    <a href="/docs/image/" class="RuiList__item">Image</a>
+                    <a class="RuiList__item RuiList__item--selected">Input</a>
+                </div>
+                <div class="RuiLists">
+                    <h4 class="RuiTypography__h4 RuiList__title mt-5">Components</h4>
+                    <a href="/docs/card/" class="RuiList__item">Card</a>
+                    <a href="/docs/model/" class="RuiList__item">Model</a>
+                    <a href="/docs/navbar/" class="RuiList__item">Navbar</a>
+                    <a href="/docs/footer/" class="RuiList__item">Footer</a>
+                </div>
+            </div>
+        </nav>
+
+        <main class="RuiMain">
+            <section class="RuiHeading" id="input">
+                <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">Input</h1>
+                <p class="RuiTypography__body1 RuiTypography--lighter">
+                    The Input component are used to get user input in a text field.
+                </p>
+            </section>
+
+            <h4 class="RuiTypography__h4 mt-5 pt-5" id="simple-textfield">Simple textfield</h4>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview">
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--outlained"
+                        placeholder="Outlined Textbox">
+                </div>
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--standerd"
+                        placeholder="Standerd Textbox">
+                </div>
+            </div>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+            <div class="RuiPreview__code">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FInput%2Finput.html%23L13-L19&style=github&showCopy=on"></script>
+            </div>
+
+            <h4 class="RuiTypography__h4 mt-5 pt-5" id="error-textfield">Error textfield</h4>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview">
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--outlained RuiInput--error"
+                        placeholder="Outlined Error Textbox">
+                </div>
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--standerd RuiInput--error"
+                        placeholder="Standerd Error Textbox">
+                </div>
+            </div>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+            <div class="RuiPreview__code">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FInput%2Finput.html%23L24-L31&style=github&showCopy=on"></script>
+            </div>
+
+            <h4 class="RuiTypography__h4 mt-5 pt-5" id="success-textfield">Success textfield</h4>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview">
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--outlained RuiInput--success"
+                        placeholder="Outlined Success Textbox">
+                </div>
+                <div class="RuiTextField">
+                    <input type="text" name="input" class="RuiInputBase RuiInput RuiInput--standerd RuiInput--success"
+                        placeholder="Standerd Success Textbox">
+                </div>
+            </div>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+            <div class="RuiPreview__code">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FInput%2Finput.html%23L35-L42&style=github&showCopy=on"></script>
+            </div>
+
+
+            <footer class="RuiFooter">
+                <span class="RuiTypography__body2">
+                    Build and designed by
+                    <a href="http://https://github.com/sandeepkumardev">
+                        Sandeepkumardev</a>
+                </span>
+            </footer>
+        </main>
+
+        <aside class="RuiPaper RuiNav--borderLeft">
+            <div class="RuiContent">
+                <div class="RuiContent__title">
+                    Contents -
+                </div>
+                <div class="RuiContent__lists">
+                    <a class="RuiContent__listItem" href="#input">Textfield</a>
+                    <a class="RuiContent__listItem" href="#simple-textfield">Simple textfield</a>
+                    <a class="RuiContent__listItem" href="#error-textfield">Error textfield</a>
+                    <a class="RuiContent__listItem" href="#success-textfield">Success textfield</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div class="RuiDrawer__model" id="toggleRuiDrawerModel">
+        <div class="RuiBackdrop" onclick="closeDrawerModel()"></div>
+        <div class="RuiModel__content">
+            <div class="RuiDrawer">
+                <div class="RuiDrawer__header mb-2 pb-2">
+                    <h2 class="RuiTypography__h2 RuiTypography--colorTextPrimary mt-1">My UI</h2>
+                    <button onclick="closeDrawerModel()" class="RuiButtonBase RuiIconButton RuiTypography--colorDanger">
+                        <span class="RuiIconButton__Label">
+                            <span class="RuiIconButton__Icon">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </span>
+                    </button>
+                </div>
+
+                <div class="RuiLists">
+                    <a href="/docs/getting-started/" class="RuiList__item">
+                        Getting Started
+                    </a>
+                    <h4 class="RuiTypography__h4 RuiList__title mt-5">Elements</h4>
+                    <a href="/docs/avatar/" class="RuiList__item">Avatar</a>
+                    <a href="/docs/badge/" class="RuiList__item">Badge</a>
+                    <a href="/docs/button/" class="RuiList__item">Button</a>
+                    <a href="/docs/image/" class="RuiList__item">Image</a>
+                    <a class="RuiList__item RuiList__item--selected">Input</a>
+                </div>
+                <div class="RuiLists">
+                    <h4 class="RuiTypography__h4 RuiList__title mt-5">Components</h4>
+                    <a href="/docs/card/" class="RuiList__item">Card</a>
+                    <a href="/docs/model/" class="RuiList__item">Model</a>
+                    <a href="/docs/navbar/" class="RuiList__item">Navbar</a>
+                    <a href="/docs/footer/" class="RuiList__item">Footer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../static/js/toggleSidebar.js"></script>
+
+</html>
