@@ -1,0 +1,8 @@
+.RuiRating {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.RuiRating--checked i {
+  color: var(--warning-color);
+}
