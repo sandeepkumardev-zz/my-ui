@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <button onclick="openRuiModel()"
+        class="RuiButtonBase RuiButton RuiButton--contained RuiButton--containedPrimary m-2">
+        <span class="RuiButton__label">Open Modal</span>
+    </button>
+
+    <div id="ruiModal" class="RuiModalBase">
+        <div class="RuiModal">
+            <div class="RuiModal__header mb-5">
+                <div class="RuiModal__title">
+                    <h3 class="RuiTypography__h3">Modal Title</h3>
+                </div>
+                <button onclick="closeRuiModel()" class="RuiButtonBase RuiIconButton RuiIconButton--colorSecondary">
+                    <span class="RuiIconButton__Label">
+                        <span class="RuiIconButton__Icon">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <div class="RuiModal__body">
+                <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Aperiam, doloremque, ea, eius eos error
+                    exercitationem
+                    fugiat hic illo illum ipsa ipsum itaque laboriosam magni maxime molestiae nam natus necessitatibus
+                    nihil
+                    nostrum numquam odio officia omnis optio pariatur perferendis placeat quae quam quas quia quisquam
+                    quod
+                    ratione repellat repudiandae rerum saepe sed similique sint soluta suscipit temporibus unde velit
+                    voluptas
+                    voluptate voluptates!</p>
+            </div>
+            <div class="RuiModal__footer mt-5">
+                <button onclick="closeRuiModel()"
+                    class="RuiButtonBase RuiButton RuiButton--outlined RuiButton--outlinedSecondary RuiButton--textSizeSmall ">
+                    <span class="RuiButton__label">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./model.js"></script>
+
+</html>
