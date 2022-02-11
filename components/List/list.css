@@ -1,0 +1,50 @@
+.RuiList__container {
+  width: 100%;
+  max-width: 300px;
+  background-color: rgb(245, 243, 243);
+}
+
+.RuiList__title {
+  padding: 0 1.6rem;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  list-style: none;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.RuiList__title--sticky {
+  top: 0;
+  z-index: 1;
+  position: sticky;
+}
+
+.RuiList__item {
+  padding: 0.5rem 1.6rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: lighter;
+  line-height: 3rem;
+}
+.RuiList__item:hover {
+  background-color: var(--grey-highlight);
+}
+
+.RuiList__item--icon {
+  display: inline-flex;
+}
+
+.RuiList__item--icon i {
+  width: 1em;
+  height: 1em;
+  user-select: none;
+}
+
+.RuiList__item--stacked {
+  margin: 1rem;
+  border: 1px solid var(--grey-highlight);
+  border-radius: 5px;
+}
