@@ -68,8 +68,8 @@
         </nav>
 
         <main class="RuiMain">
-            <section class="RuiHeading" id="footer">
-                <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">Footer</h1>
+            <section class="RuiHeading" id="paper">
+                <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">Paper</h1>
                 <p class="RuiTypography__body1 RuiTypography--lighter">
                     The background of an application resembles the flat, opaque texture of a sheet of paper, and an
                     application’s behavior
@@ -77,13 +77,34 @@
                 </p>
             </section>
 
+            <h4 class="RuiTypography__h4 mt-5 pt-5" id="simple-paper">Simple paper</h4>
             <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
-            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
-
+            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview"
+                style="position: relative; background-color: rgb(241, 240, 240);">
+                <div class="RuiPaper s-10 m-2"></div>
+                <div class="RuiPaper RuiPaper--outlined s-10 m-2"></div>
             </div>
             <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
             <div class="RuiPreview__code">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FPaper%2Fpaper.html%23L13-L15&style=github&showCopy=on"></script>
+            </div>
 
+            <h4 class="RuiTypography__h4 mt-5 pt-5" id="paper-with-shadow">Paper with shadow</h4>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
+                <div class="RuiPaper RuiPaper--rounded RuiPaper--elevation1 s-10 m-2"></div>
+
+                <div class="RuiPaper RuiPaper--rounded RuiPaper--elevation2 s-10 m-2"></div>
+
+                <div class="RuiPaper RuiPaper--rounded RuiPaper--elevation3 s-10 m-2"></div>
+
+                <div class="RuiPaper RuiPaper--rounded RuiPaper--elevation4 s-10 m-2"></div>
+            </div>
+            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+            <div class="RuiPreview__code">
+                <script
+                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FPaper%2Fpaper.html%23L17-L23&style=github&showCopy=on"></script>
             </div>
 
             <footer class="RuiFooter">
@@ -101,7 +122,9 @@
                     Contents -
                 </div>
                 <div class="RuiContent__lists">
-                    <a class="RuiContent__listItem" href="#footer">Footer</a>
+                    <a class="RuiContent__listItem" href="#paper">Paper</a>
+                    <a class="RuiContent__listItem" href="#simple-paper">Simple paper</a>
+                    <a class="RuiContent__listItem" href="#paper-with-shadow">Paper with shadow</a>
                 </div>
             </div>
         </aside>
