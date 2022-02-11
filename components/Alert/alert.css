@@ -36,8 +36,8 @@
   background-color: var(--info-bg);
 }
 .RuiAlert--standardSuccess {
-  color: var(--success-color);
-  background-color: var(--success-bg);
+  color: var(--text-color);
+  background-color: var(--success-color);
 }
 
 #RuiAlert__title {
