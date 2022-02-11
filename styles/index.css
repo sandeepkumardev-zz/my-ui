@@ -16,6 +16,8 @@
 
 @import "../components/Modal/modal.css";
 
+@import "../components/Grid/grid.css";
+
 @import "./sizes.css";
 @import "./padding.css";
 @import "./margin.css";
