@@ -1,0 +1,18 @@
+.RuiGrid {
+  display: grid;
+  height: 10rem;
+}
+
+.RuiGrid--two-column {
+  grid-template-columns: 1fr 1fr;
+}
+
+.RuiGrid--three-column {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.RuiFlex--Centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
