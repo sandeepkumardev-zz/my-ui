@@ -12,6 +12,7 @@
 @import "../components/Card/card.css";
 @import "../components/Footer/footer.css";
 @import "../components/Drawer/drawer.css";
+@import "../components/List/list.css";
 
 @import "./sizes.css";
 @import "./padding.css";
