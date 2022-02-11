@@ -24,7 +24,9 @@
                 </p>
             </div>
             <div class="RuiCard__actions">
-                <button class="btn btn__text">Learn More</button>
+                <button class="RuiButtonBase RuiButton RuiButton--text RuiButton--textPrimary RuiButton--textSizeSmall">
+                    <span class="RuiButton__label">Read More</span>
+                </button>
             </div>
         </div>
     </div>
@@ -43,7 +45,9 @@
                 </p>
             </div>
             <div class="RuiCard__actions">
-                <button class="btn btn__text">Learn More</button>
+                <button class="RuiButtonBase RuiButton RuiButton--text RuiButton--textPrimary RuiButton--textSizeSmall">
+                    <span class="RuiButton__label">Read More</span>
+                </button>
             </div>
         </div>
     </div>
@@ -70,15 +74,16 @@
 
     <h2 class="RuiTypography__h2">Card with Badge</h2>
     <div class="card__container">
-        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded rss007">
+        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded RuiCard--positionRelative">
             <button class="RuiButtonBase RuiCard__Action__Area " type="button">
                 <img class="RuiCard__media RuiCard__media--img" height="150" src="http://placeimg.com/640/480/food"
                     alt="">
 
-                <button class="RuiButtonBase RuiIconButton rss006">
+                <button class="RuiButtonBase RuiIconButton RuiCard__badge--displayRight">
                     <div class="RuiBadge">
-                        <span class="RuiBadge__Icon"><i class="fas fa-heart c-red"></i></span>
-                        <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">10</span>
+                        <span class="RuiBadge__Icon"><i class="fas fa-comment-dots c-maroon"></i></span>
+                        <span
+                            class="RuiBadge__badge RuiBadge__badge--colorSecondary RuiBadge__badge--anchorOriginTopRight">10</span>
                     </div>
                 </button>
 
@@ -93,23 +98,23 @@
 
     <h2 class="RuiTypography__h2">Horizontal Card</h2>
     <div class="card__container">
-        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded rss005">
-            <div class="rss001">
+        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded RuiCard--horizontal">
+            <div>
                 <div class="RuiCard__content">
                     <h2 class="RuiTypography__h2">saepe</h2>
                     <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">Libero soluta aut a officiis
                         voluptatem.</p>
                 </div>
-                <div class="rss002">
+                <div class="RuiCard--horizontal__actions">
                     <button class="RuiButtonBase RuiIconButton"><i
                             class="fas fa-angle-double-left RuiIconButton__Label"></i></button>
                     <button class="RuiButtonBase RuiIconButton"><i
-                            class="fas fa-play RuiIconButton__Label rss004"></i></button>
+                            class="fas fa-play RuiIconButton__Label RuiIconButton--sizeBig"></i></button>
                     <button class="RuiButtonBase RuiIconButton"><i
                             class="fas fa-angle-double-right RuiIconButton__Label"></i></button>
                 </div>
             </div>
-            <div class="rss003">
+            <div class="RuiCard--horizontal__image">
                 <img class="RuiCard__media RuiCard__media--img" src="http://placeimg.com/640/480/food" alt="">
             </div>
         </div>
@@ -118,10 +123,10 @@
     <h2 class="RuiTypography__h2">Card with text overlay</h2>
     <div class="card__container">
         <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded">
-            <button class="RuiButtonBase RuiCard__Action__Area rss007" type="button">
+            <button class="RuiButtonBase RuiCard__Action__Area RuiCard--positionRelative" type="button">
                 <img class="RuiCard__media RuiCard__media--img" height="150" src="http://placeimg.com/640/480/food"
                     alt="">
-                <div class="RuiCard__content rss008">
+                <div class="RuiCard__content RuiCard__content--overlay">
                     <h2 class="RuiTypography__h2">saepe</h2>
                     <p class="RuiTypography__body1 RuiTypography--colorTextSecondary">Libero soluta aut a
                         officiis
@@ -138,7 +143,7 @@
 
     <h2 class="RuiTypography__h2">Card with Dismiss</h2>
     <div class="card__container">
-        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded rss007">
+        <div class="RuiPaper RuiCard RuiPaper--elevation1 RuiPaper--rounded RuiCard--positionRelative">
             <button class="RuiButtonBase RuiCard__Action__Area " type="button">
                 <img class="RuiCard__media RuiCard__media--img" height="150" src="http://placeimg.com/640/480/food"
                     alt="">
@@ -149,7 +154,7 @@
                         voluptatem.</p>
                 </div>
             </button>
-            <div class="RuiCard__actions rss009">
+            <div class="RuiCard__actions RuiCard__actions--displayRight">
                 <button class="RuiButtonBase RuiButton RuiButton--text RuiButton--textSecondary">
                     <span class="RuiButton__label">Dismiss</span>
                 </button>
