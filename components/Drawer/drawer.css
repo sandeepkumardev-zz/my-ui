@@ -6,7 +6,7 @@
   height: 100vh;
   overflow: scroll;
 }
-.RuiList__item {
+.RuiDrawer__item {
   margin: 0.5rem;
   padding: 1rem;
   display: flex;
@@ -17,24 +17,24 @@
   cursor: pointer;
   font-weight: lighter;
 }
-.RuiLists .RuiList__item {
+.RuiDrawer__items .RuiDrawer__item {
   color: var(--text-color-dark);
   text-decoration: none;
 }
-.RuiList__item:hover {
+.RuiDrawer__item:hover {
   background-color: var(--grey-highlight);
 }
-.RuiList__item:active {
+.RuiDrawer__item:active {
   background-color: var(--primary-color-highlight);
 }
-.RuiLists .RuiList__item--selected {
+.RuiDrawer .RuiDrawer__item--selected {
   background-color: var(--primary-color-highlight);
   color: var(--primary-color-light);
   font-weight: normal;
   box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
     0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
 }
-.RuiList__item--selected:hover {
+.RuiDrawer__item--selected:hover {
   background-color: var(--primary-color-highlight);
   cursor: default;
 }
