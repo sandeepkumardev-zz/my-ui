@@ -1,40 +1,8 @@
-@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
-@import "./docs/index.css";
-@import "./styles/index.css";
+@import "./docs/index.css"; /* documentation css */
 
-/* reset CSS  */
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  /* transition: all 0.1s ease-in; */
-}
+/* hosted root css  */
+@import url(https://myui-0.netlify.app/static/css/root.css);
 
-body {
-  min-height: 100vh;
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  font-size: 62.5%; /* 10px */
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 59%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  html {
-    font-size: 56%;
-  }
-}
+/* local css */
+/* @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+@import "./styles/index.css"; */
