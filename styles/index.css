@@ -14,6 +14,8 @@
 @import "../components/Drawer/drawer.css";
 @import "../components/List/list.css";
 
+@import "../components/Modal/modal.css";
+
 @import "./sizes.css";
 @import "./padding.css";
 @import "./margin.css";
