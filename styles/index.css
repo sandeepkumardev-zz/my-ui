@@ -17,6 +17,7 @@
 @import "../components/Modal/modal.css";
 @import "../components/Grid/grid.css";
 @import "../components/Rating/rating.css";
+@import "../components/Toast/toast.css";
 
 @import "./sizes.css";
 @import "./padding.css";

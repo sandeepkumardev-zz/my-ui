@@ -1,8 +1,8 @@
 @import "./docs/index.css"; /* documentation css */
 
 /* hosted root css  */
-@import url(https://myui-0.netlify.app/static/css/root.css);
+/* @import url(https://myui-0.netlify.app/static/css/root.css); */
 
 /* local css */
-/* @import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
-@import "./styles/index.css"; */
+@import url(https://pro.fontawesome.com/releases/v5.10.0/css/all.css);
+@import "./styles/index.css";
