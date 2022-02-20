@@ -170,7 +170,7 @@ ul {
   padding-left: 16px;
 }
 
-/* toast */
+/* .................................................toast ....................................*/
 .RuiToast__container {
   display: flex;
   align-items: center;
@@ -748,6 +748,8 @@ ul {
   position: relative;
   box-sizing: border-box;
   letter-spacing: 0.00938rem;
+  display: flex;
+  align-items: center;
 }
 
 .RuiInputBase {
@@ -797,15 +799,36 @@ ul {
   background-color: var(--success-bg);
 }
 
+/* style for search input */
+.RuiTextField__search {
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  height: 4rem;
+}
+.RuiTextField__search input {
+  height: auto;
+}
+
+.RuiInput__searchIcon {
+  font-size: 2rem;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid var(--grey);
+  border-radius: 0;
+}
+.RuiInput__searchIcon i {
+  font-weight: 500;
+}
+
 /* ............................................navbar styles............................................ */
 .RuiAppbar {
   width: 100%;
   display: flex;
   z-index: 1100;
-  box-sizing: border-box;
-  flex-shrink: 0;
   flex-direction: column;
+  align-items: center;
 }
+
 .RuiAppBar--colorPrimary {
   color: var(--text-color);
   background-color: var(--primary-color-light);
@@ -816,6 +839,18 @@ ul {
 }
 .RuiAppBar--positionFixed {
   position: fixed;
+}
+.RuiAppBar--positionSticky {
+  position: sticky;
+  top: 0;
+}
+
+.RuiToolbar__container {
+  width: 100%;
+}
+
+.RuiToolbar__container--lg {
+  max-width: var(--container-lg);
 }
 
 .RuiToolbar {
@@ -836,13 +871,6 @@ ul {
 @media (min-width: 600px) {
   .RuiToolbar--regular {
     min-height: 6.4rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .RuiToolbar--gutters {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
   }
 }
 
