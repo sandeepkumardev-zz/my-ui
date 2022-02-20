@@ -2,10 +2,10 @@
   width: 100%;
   display: flex;
   z-index: 1100;
-  box-sizing: border-box;
-  flex-shrink: 0;
   flex-direction: column;
+  align-items: center;
 }
+
 .RuiAppBar--colorPrimary {
   color: var(--text-color);
   background-color: var(--primary-color-light);
@@ -17,11 +17,16 @@
 .RuiAppBar--positionFixed {
   position: fixed;
 }
+.RuiAppBar--positionSticky {
+  position: sticky;
+  top: 0;
+}
 
 .RuiToolbar {
   display: flex;
   position: relative;
   align-items: center;
+  justify-content: space-between;
 }
 
 .RuiToolbar--regular {
@@ -36,13 +41,6 @@
 @media (min-width: 600px) {
   .RuiToolbar--regular {
     min-height: 6.4rem;
-  }
-}
-
-@media (min-width: 600px) {
-  .RuiToolbar--gutters {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
   }
 }
 
