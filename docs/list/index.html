@@ -11,170 +11,178 @@
 
 <body>
     <header class="RuiPaper RuiAppbar RuiAppBar--positionFixed RuiAppBar--colorPrimary RuiPaper--elevation3">
-        <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters">
-            <button onclick="showDrawerModel()"
-                class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5 RuiToggle">
-                <span class="RuiIconButton__Label">
-                    <span class="RuiIconButton__Icon">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </span>
-            </button>
-            <a href="/" class="RuiButtonBase">
-                <h3 class="RuiTypography__h3 mt-2">My UI</h3>
-            </a>
-            <div class="ml-auto">
-                <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+        <div class="RuiToolbar__container--lg">
+            <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters">
+                <button onclick="showDrawerModel()"
+                    class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5 RuiToggle">
                     <span class="RuiIconButton__Label">
                         <span class="RuiIconButton__Icon">
-                            <i class="far fa-sun"></i>
+                            <i class="fas fa-bars"></i>
                         </span>
                     </span>
                 </button>
-                <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
-                    <span class="RuiIconButton__Label">
-                        <span class="RuiIconButton__Icon">
-                            <i class="fab fa-github"></i>
-                        </span>
-                    </span>
+                <a href="/" class="RuiButtonBase">
+                    <h3 class="RuiTypography__h3 mt-2">My UI</h3>
                 </a>
+                <div class="ml-auto">
+                    <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+                        <span class="RuiIconButton__Label">
+                            <span class="RuiIconButton__Icon">
+                                <i class="far fa-sun"></i>
+                            </span>
+                        </span>
+                    </button>
+                    <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
+                        <span class="RuiIconButton__Label">
+                            <span class="RuiIconButton__Icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="RuiGridLayout">
-        <nav class="RuiPaper RuiNav--borderRight">
-            <div class="RuiDrawer">
-                <div class="RuiDrawer__items">
-                    <a href="/docs/getting-started/" class="RuiDrawer__item">
-                        Getting Started
-                    </a>
-                    <h4 class="RuiTypography__h4 RuiDrawer__title mt-5">Elements</h4>
-                    <a href="/docs/avatar/" class="RuiDrawer__item">Avatar</a>
-                    <a href="/docs/badge/" class="RuiDrawer__item">Badge</a>
-                    <a href="/docs/button/" class="RuiDrawer__item">Button</a>
-                    <a href="/docs/grid/" class="RuiDrawer__item">Grid</a>
-                    <a href="/docs/image/" class="RuiDrawer__item">Image</a>
-                    <a href="/docs/input/" class="RuiDrawer__item">Input</a>
-                    <a href="/docs/paper/" class="RuiDrawer__item">Paper</a>
-                    <a href="/docs/rating/" class="RuiDrawer__item">Rating</a>
-                    <a href="/docs/typography/" class="RuiDrawer__item">Typography</a>
-                </div>
-                <div class="RuiDrawer__items">
-                    <h4 class="RuiTypography__h4 RuiDrawer__title mt-5">Components</h4>
-                    <a href="/docs/alert/" class="RuiDrawer__item">Alert</a>
-                    <a href="/docs/card/" class="RuiDrawer__item">Card</a>
-                    <a class="RuiDrawer__item RuiDrawer__item--selected">List</a>
-                    <a href="/docs/modal/" class="RuiDrawer__item">Modal</a>
-                    <a href="/docs/navbar/" class="RuiDrawer__item">Navbar</a>
-                    <a href="/docs/footer/" class="RuiDrawer__item">Footer</a>
-                    <a href="/docs/toast/" class="RuiDrawer__item">Toast</a>
-                </div>
-            </div>
-        </nav>
-
-        <main class="RuiMain">
-            <section class="RuiHeading" id="list">
-                <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">List</h1>
-                <p class="RuiTypography__body1 RuiTypography--lighter">
-                    Lists are a continuous group of text or images. They are composed of items containing primary and
-                    supplemental actions,
-                    which are represented by icons and text.
-                </p>
-            </section>
-
-            <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="simple-list">Simple list</h4>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
-            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
-                <div class="RuiPaper RuiList__container">
-                    <p class="RuiList__title RuiList__title--sticky">Simple List</p>
-                    <div class="RuiList__items">
-                        <div class="RuiList__item">Item 1</div>
-                        <div class="RuiList__item">Item 2</div>
-                        <div class="RuiList__item">Item 3</div>
-                        <div class="RuiList__item">Item 4</div>
+    <div class="RuiContainer--lg">
+        <div class="RuiGridLayout">
+            <nav class="RuiPaper RuiNav--borderRight">
+                <div class="RuiDrawer">
+                    <div class="RuiDrawer__items">
+                        <a href="/docs/getting-started/" class="RuiDrawer__item">
+                            Getting Started
+                        </a>
+                        <h4 class="RuiTypography__h4 RuiDrawer__title mt-5">Elements</h4>
+                        <a href="/docs/avatar/" class="RuiDrawer__item">Avatar</a>
+                        <a href="/docs/badge/" class="RuiDrawer__item">Badge</a>
+                        <a href="/docs/button/" class="RuiDrawer__item">Button</a>
+                        <a href="/docs/grid/" class="RuiDrawer__item">Grid</a>
+                        <a href="/docs/image/" class="RuiDrawer__item">Image</a>
+                        <a href="/docs/input/" class="RuiDrawer__item">Input</a>
+                        <a href="/docs/paper/" class="RuiDrawer__item">Paper</a>
+                        <a href="/docs/rating/" class="RuiDrawer__item">Rating</a>
+                        <a href="/docs/typography/" class="RuiDrawer__item">Typography</a>
+                    </div>
+                    <div class="RuiDrawer__items">
+                        <h4 class="RuiTypography__h4 RuiDrawer__title mt-5">Components</h4>
+                        <a href="/docs/alert/" class="RuiDrawer__item">Alert</a>
+                        <a href="/docs/card/" class="RuiDrawer__item">Card</a>
+                        <a class="RuiDrawer__item RuiDrawer__item--selected">List</a>
+                        <a href="/docs/modal/" class="RuiDrawer__item">Modal</a>
+                        <a href="/docs/navbar/" class="RuiDrawer__item">Navbar</a>
+                        <a href="/docs/footer/" class="RuiDrawer__item">Footer</a>
+                        <a href="/docs/toast/" class="RuiDrawer__item">Toast</a>
                     </div>
                 </div>
-            </div>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
-            <div class="RuiPreview__code">
-                <script
-                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Fsimple-list.html%23L13-L21&style=github&showCopy=on"></script>
-            </div>
+            </nav>
 
-            <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="list-with-icons">List with icons
-            </h4>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
-            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
-                <div class="RuiPaper RuiList__container">
-                    <p class="RuiList__title RuiList__title--sticky">Simple List</p>
-                    <div class="RuiList__items">
-                        <div class="RuiList__item">
-                            <div class="RuiList__item--icon"><i class="fas fa-paper-plane"></i></div>
-                            <div class="RuiList__item--text">Item 1</div>
-                        </div>
-                        <div class="RuiList__item">
-                            <div class="RuiList__item--icon"><i class="fas fa-mars"></i></div>
-                            <div class="RuiList__item--text">Item 2</div>
-                        </div>
-                        <div class="RuiList__item">
-                            <div class="RuiList__item--icon"><i class="fas fa-mail-bulk"></i></div>
-                            <div class="RuiList__item--text">Item 3</div>
-                        </div>
-                        <div class="RuiList__item">
-                            <div class="RuiList__item--icon"><i class="fas fa-recycle"></i></div>
-                            <div class="RuiList__item--text">Item 4</div>
+            <main class="RuiMain">
+                <section class="RuiHeading" id="list">
+                    <h1 class="RuiTypography__h1 RuiTypography--colorTextPrimary">List</h1>
+                    <p class="RuiTypography__body1 RuiTypography--lighter">
+                        Lists are a continuous group of text or images. They are composed of items containing primary
+                        and
+                        supplemental actions,
+                        which are represented by icons and text.
+                    </p>
+                </section>
+
+                <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="simple-list">Simple list
+                </h4>
+                <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+                <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
+                    <div class="RuiPaper RuiList__container">
+                        <p class="RuiList__title RuiList__title--sticky">Simple List</p>
+                        <div class="RuiList__items">
+                            <div class="RuiList__item">Item 1</div>
+                            <div class="RuiList__item">Item 2</div>
+                            <div class="RuiList__item">Item 3</div>
+                            <div class="RuiList__item">Item 4</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
-            <div class="RuiPreview__code">
-                <script
-                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Flist-with-icons.html%23L13-L33&style=github&showCopy=on"></script>
-            </div>
+                <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+                <div class="RuiPreview__code">
+                    <script
+                        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Fsimple-list.html%23L13-L21&style=github&showCopy=on"></script>
+                </div>
 
-            <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="stacked-list">Stacked list</h4>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
-            <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
-                <div class="RuiPaper RuiList__container">
-                    <div class="RuiList__items py-2">
-                        <div class="RuiList__item RuiList__item--stacked">Notification 1</div>
-                        <div class="RuiList__item RuiList__item--stacked">Notification 2</div>
-                        <div class="RuiList__item RuiList__item--stacked">Notification 3</div>
-                        <div class="RuiList__item RuiList__item--stacked">Notification 4</div>
+                <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="list-with-icons">List with
+                    icons
+                </h4>
+                <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+                <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
+                    <div class="RuiPaper RuiList__container">
+                        <p class="RuiList__title RuiList__title--sticky">Simple List</p>
+                        <div class="RuiList__items">
+                            <div class="RuiList__item">
+                                <div class="RuiList__item--icon"><i class="fas fa-paper-plane"></i></div>
+                                <div class="RuiList__item--text">Item 1</div>
+                            </div>
+                            <div class="RuiList__item">
+                                <div class="RuiList__item--icon"><i class="fas fa-mars"></i></div>
+                                <div class="RuiList__item--text">Item 2</div>
+                            </div>
+                            <div class="RuiList__item">
+                                <div class="RuiList__item--icon"><i class="fas fa-mail-bulk"></i></div>
+                                <div class="RuiList__item--text">Item 3</div>
+                            </div>
+                            <div class="RuiList__item">
+                                <div class="RuiList__item--icon"><i class="fas fa-recycle"></i></div>
+                                <div class="RuiList__item--text">Item 4</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
-            <div class="RuiPreview__code">
-                <script
-                    src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Fstacked-list.html%23L13-L20&style=github&showCopy=on"></script>
-            </div>
-
-
-            <footer class="RuiFooter">
-                <span class="RuiTypography__body2">
-                    Build and designed by
-                    <a href="http://https://github.com/sandeepkumardev">
-                        Sandeepkumardev</a>
-                </span>
-            </footer>
-        </main>
-
-        <aside class="RuiPaper RuiNav--borderLeft">
-            <div class="RuiContent">
-                <div class="RuiContent__title">
-                    Contents -
+                <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+                <div class="RuiPreview__code">
+                    <script
+                        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Flist-with-icons.html%23L13-L33&style=github&showCopy=on"></script>
                 </div>
-                <div class="RuiContent__lists">
-                    <a class="RuiContent__listItem" href="#list">List</a>
-                    <a class="RuiContent__listItem" href="#simple-list">Simple list</a>
-                    <a class="RuiContent__listItem" href="#list-with-icons">List with icons</a>
-                    <a class="RuiContent__listItem" href="#stacked-list">Stacked list</a>
+
+                <h4 class="RuiTypography__h4 RuiTypography--colorTextPrimary mt-5 pt-5" id="stacked-list">Stacked list
+                </h4>
+                <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
+                <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview" style="position: relative;">
+                    <div class="RuiPaper RuiList__container">
+                        <div class="RuiList__items py-2">
+                            <div class="RuiList__item RuiList__item--stacked">Notification 1</div>
+                            <div class="RuiList__item RuiList__item--stacked">Notification 2</div>
+                            <div class="RuiList__item RuiList__item--stacked">Notification 3</div>
+                            <div class="RuiList__item RuiList__item--stacked">Notification 4</div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </aside>
+                <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
+                <div class="RuiPreview__code">
+                    <script
+                        src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fsandeepkumardev%2Fmy-ui%2Fblob%2Fdev%2Fcomponents%2FList%2Fstacked-list.html%23L13-L20&style=github&showCopy=on"></script>
+                </div>
+
+
+                <footer class="RuiFooter">
+                    <span class="RuiTypography__body2">
+                        Build and designed by
+                        <a href="http://https://github.com/sandeepkumardev">
+                            Sandeepkumardev</a>
+                    </span>
+                </footer>
+            </main>
+
+            <aside class="RuiPaper RuiNav--borderLeft">
+                <div class="RuiContent">
+                    <div class="RuiContent__title">
+                        Contents -
+                    </div>
+                    <div class="RuiContent__lists">
+                        <a class="RuiContent__listItem" href="#list">List</a>
+                        <a class="RuiContent__listItem" href="#simple-list">Simple list</a>
+                        <a class="RuiContent__listItem" href="#list-with-icons">List with icons</a>
+                        <a class="RuiContent__listItem" href="#stacked-list">Stacked list</a>
+                    </div>
+                </div>
+            </aside>
+        </div>
     </div>
 
     <div class="RuiDrawer__model" id="toggleRuiDrawerModel">
