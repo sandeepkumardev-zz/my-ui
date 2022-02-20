@@ -1,0 +1,21 @@
+.RuiToast__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RuiToast {
+  position: fixed;
+  margin-bottom: 2rem;
+  bottom: 0;
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .RuiToast__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

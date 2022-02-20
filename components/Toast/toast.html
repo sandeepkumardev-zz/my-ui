@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body>
+    <button onclick="showToast()" class="RuiButtonBase RuiButton RuiButton--contained RuiButton--textSizeSmall m-3">
+        <span class="RuiButton__label">Open</span>
+    </button>
+
+    <div class="RuiToast__container">
+        <div class="RuiPaper RuiAlert RuiAlert--standardSuccess RuiToast" id="ruiToast__js">
+            <div class="RuiAlert__icon">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <div class="RuiAlert__message">
+                This is a success alert— check it out!
+            </div>
+            <div class="RuiAlert__actions">
+                <button onclick="hideToast()"
+                    class="RuiButtonBase RuiButton RuiButton--contained RuiButton--textSizeSmall RuiButton--outlinedSecondary s-3">
+                    <span class="RuiButton__label">Close</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./toast.js"></script>
+
+</html>
