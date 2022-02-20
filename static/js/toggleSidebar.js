@@ -1,9 +1,9 @@
-const toggleDrawerModel = document.getElementById("toggleRuiDrawerModel");
+const toggleRuiDrawerModel = document.getElementById("toggleRuiDrawerModel");
 
 function closeDrawerModel() {
-    toggleDrawerModel.style.display = "none";
+    toggleRuiDrawerModel.style.display = "none";
 }
 
 function showDrawerModel() {
-    toggleDrawerModel.style.display = "block";
+    toggleRuiDrawerModel.style.display = "block";
 }
