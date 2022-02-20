@@ -22,11 +22,14 @@
   top: 0;
 }
 
+.RuiToolbar__container {
+  width: 100%;
+}
+
 .RuiToolbar {
   display: flex;
   position: relative;
   align-items: center;
-  justify-content: space-between;
 }
 
 .RuiToolbar--regular {

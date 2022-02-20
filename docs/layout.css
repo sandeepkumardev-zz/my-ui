@@ -7,7 +7,6 @@
 
 .RuiToolbar__container--lg {
   max-width: var(--container-lg);
-  width: 100%;
 }
 
 .RuiGridLayout {
