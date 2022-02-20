@@ -6,6 +6,8 @@
   position: relative;
   box-sizing: border-box;
   letter-spacing: 0.00938rem;
+  display: flex;
+  align-items: center;
 }
 
 .RuiInputBase {
@@ -53,4 +55,25 @@
 .RuiInput--success {
   border-color: var(--success-color);
   background-color: var(--success-bg);
+}
+
+/* style for search input */
+.RuiTextField__search {
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  height: 4rem;
+}
+.RuiTextField__search input {
+  height: auto;
+}
+
+.RuiInput__searchIcon {
+  font-size: 2rem;
+  right: 0;
+  height: 100%;
+  border-left: 1px solid var(--grey);
+  border-radius: 0;
+}
+.RuiInput__searchIcon i {
+  font-weight: 500;
 }
