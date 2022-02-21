@@ -58,7 +58,6 @@ ul {
   --info-bg: #5dc4eb1a;
   --info-bg-dark: #37b9e91a;
   --warning-color: #ffc95c;
-  --warning-bg: #ffc95c1a;
   --warning-bg: #fcbc3d1a;
   --danger-color: #fa7178;
   --danger-bg: #fa71781a;
@@ -77,6 +76,8 @@ ul {
 
   --padding: 0.25rem;
   --margin: 0.25rem;
+
+  --container-lg: 140rem;
 }
 
 /* .................................................paper styles............................................ */
