@@ -1,0 +1,17 @@
+.RuiContainer {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.RuiContainer--sm {
+  max-width: var(--container-sm);
+}
+.RuiContainer--md {
+  max-width: var(--container-md);
+}
+.RuiContainer--lg {
+  max-width: var(--container-lg);
+}
+.RuiContainer--xl {
+  max-width: var(--container-xl);
+}

@@ -1,6 +1,7 @@
 /*************** Component Imports ***************/
 @import "./reset.css";
 @import "./variable.css";
+@import "./container.css";
 
 @import "../components/Paper/paper.css";
 @import "../components/Navbar/navbar.css";
