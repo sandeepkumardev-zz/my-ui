@@ -26,6 +26,10 @@
   width: 100%;
 }
 
+.RuiToolbar__container--lg {
+  max-width: var(--container-lg);
+}
+
 .RuiToolbar {
   display: flex;
   position: relative;
