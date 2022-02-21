@@ -1,14 +1,3 @@
-.RuiContainer--lg {
-  max-width: var(--container-lg);
-  margin: 0 auto;
-  height: 100vh;
-  position: relative;
-}
-
-.RuiToolbar__container--lg {
-  max-width: var(--container-lg);
-}
-
 .RuiGridLayout {
   padding-top: 6.4rem;
   display: grid;
