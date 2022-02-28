@@ -53,6 +53,7 @@ This UI is under build. Currently it's contain only these components.
 - [Typography](https://myui-0.netlify.app/docs/typography/)
 - [Alert](https://myui-0.netlify.app/docs/alert/)
 - [Card](https://myui-0.netlify.app/docs/card/)
+- [Drawer](https://myui-0.netlify.app/docs/drawer/)
 - [List](https://myui-0.netlify.app/docs/list/)
 - [Modal](https://myui-0.netlify.app/docs/modal/)
 - [Navbar](https://myui-0.netlify.app/docs/navbar/)
