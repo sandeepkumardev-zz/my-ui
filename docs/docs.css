@@ -25,6 +25,8 @@
 .RuiPreview__code {
   font-size: 1.6rem;
   margin-top: -2rem;
+  max-height: 600px;
+  overflow: auto;
 }
 
 /* right nav styles */
