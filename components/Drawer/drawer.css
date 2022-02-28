@@ -4,7 +4,7 @@
   position: fixed;
   width: 24rem;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
 }
 .RuiDrawer__item {
   margin: 0.5rem;

@@ -2,13 +2,6 @@
   display: none;
 }
 
-.RuiNav--borderRight {
-  border-right: 1px solid var(--light-grey);
-}
-.RuiNav--borderLeft {
-  border-left: 1px solid var(--light-grey);
-}
-
 .RuiMain {
   margin: 8rem 8rem 1rem 8rem;
   position: relative;
