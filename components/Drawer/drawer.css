@@ -1,3 +1,10 @@
+.RuiDrawer__container {
+  height: 400px;
+  width: fit-content;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
 .RuiDrawer {
   user-select: none;
   padding: 1.2rem;
@@ -37,4 +44,58 @@
 .RuiDrawer__item--selected:hover {
   background-color: var(--primary-color-highlight);
   cursor: default;
+}
+
+/* simple drawer */
+.RuiSimpleDrawer--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.RuiSimpleDrawer {
+  flex-basis: 200px;
+  min-width: 300px;
+  height: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 1px rgb(175, 175, 175);
+  padding: 15px;
+  position: relative;
+}
+
+.RuiSimpleDrawer__content {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.RuiSimpleDrawer__items {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: -15px;
+  overflow-y: scroll;
+}
+
+.RuiSimpleDrawer__item {
+  padding: 13px;
+  margin: 5px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.RuiSimpleDrawer__item:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.RuiSimpleDrawer__item--selected {
+  background-color: rgb(180, 170, 255);
+  color: rgb(60, 3, 177);
 }
