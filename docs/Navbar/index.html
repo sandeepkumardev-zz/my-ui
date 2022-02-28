@@ -179,9 +179,60 @@
                 </h4>
                 <p class="RuiTypography__body1 RuiTypography--colorAccent">Preview -</p>
                 <div class="RuiPaper RuiPaper--elevation2 RuiAvatar--Preview">
-                    <iframe src="https://myui-0.netlify.app/components/navbar/navbar-with-search.html"
-                        style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-                        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                    <header
+                        class="RuiPaper RuiAppbar RuiAppBar--positionSticky RuiAppBar--colorPrimary RuiPaper--elevation3">
+                        <div class="RuiContainer RuiContainer--lg">
+                            <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters RuiAppBar__search">
+                                <div class="RuiAppBar__search__content">
+                                    <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5">
+                                        <span class="RuiIconButton__Label">
+                                            <span class="RuiIconButton__Icon">
+                                                <i class="fas fa-bars"></i>
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <h3 class="RuiTypography__h3 mt-2">E-comm</h3>
+                                </div>
+
+                                <div class="RuiTextField RuiTextField__search RuiAppBar__search__searchBar">
+                                    <input type="text" name="input" class="RuiInputBase RuiInput px-2"
+                                        placeholder="Search">
+                                    <button class="RuiButtonBase RuiIconButton RuiInput__searchIcon">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+
+                                <div class="RuiAppBar__search__action">
+                                    <a class="RuiButtonBase RuiButton RuiButton--contained RuiButton--textSizeSmall RuiButton--textPrimary m-2"
+                                        href="./pages/auth/signin.html">
+                                        <span class="RuiButton__label">Log in</span>
+                                    </a>
+                                    <div class="RuiAppBar__search__action--icons">
+                                        <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit">
+                                            <div class="RuiBadge">
+                                                <span class="RuiBadge__Icon"><i class="far fa-heart"></i></span>
+                                                <span
+                                                    class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">5</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit">
+                                            <div class="RuiBadge">
+                                                <span class="RuiBadge__Icon"><i class="fas fa-baby-carriage"></i></span>
+                                                <span
+                                                    class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">10</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="RuiTextField RuiTextField__search RuiAppBar__search__searchBar--after">
+                                <input type="text" name="input" class="RuiInputBase RuiInput px-2" placeholder="Search">
+                                <button class="RuiButtonBase RuiIconButton RuiInput__searchIcon">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </header>
                 </div>
                 <p class="RuiTypography__body1 RuiTypography--colorAccent mt-5">Code -</p>
                 <div class="RuiPreview__code">
