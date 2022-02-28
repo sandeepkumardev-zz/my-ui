@@ -15,3 +15,10 @@
 .RuiContainer--xl {
   max-width: var(--container-xl);
 }
+
+.RuiNav--borderRight {
+  border-right: 1px solid var(--light-grey);
+}
+.RuiNav--borderLeft {
+  border-left: 1px solid var(--light-grey);
+}
