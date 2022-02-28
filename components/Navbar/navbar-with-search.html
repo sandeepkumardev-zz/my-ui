@@ -10,10 +10,10 @@
 </head>
 
 <body>
-    <header class="RuiPaper RuiAppbar RuiAppBar--positionStatic RuiAppBar--colorPrimary RuiPaper--elevation3">
-        <div class="RuiToolbar__container">
-            <div class="RuiToolbar RuiToolbar--regular RuiToolbar--spaceBetween RuiToolbar--gutters">
-                <div class="RuiToolbar__left">
+    <header class="RuiPaper RuiAppbar RuiAppBar--positionSticky RuiAppBar--colorPrimary RuiPaper--elevation3">
+        <div class="RuiContainer RuiContainer--lg">
+            <div class="RuiToolbar RuiToolbar--regular RuiToolbar--gutters RuiAppBar__search">
+                <div class="RuiAppBar__search__content">
                     <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit mr-5">
                         <span class="RuiIconButton__Label">
                             <span class="RuiIconButton__Icon">
@@ -21,39 +21,42 @@
                             </span>
                         </span>
                     </button>
-                    <h3 class="RuiTypography__h3 mt-2">My UI</h3>
+                    <h3 class="RuiTypography__h3 mt-2">E-comm</h3>
                 </div>
 
-                <div class="RuiToolbar__fill">
-                    <div class="RuiAppbar__searchBarInput">
-                        <input type="text" placeholder="Search" />
-                        <button
-                            class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit RuiButton--textSizeSmall">
-                            <span class="RuiIconButton__Label">
-                                <span class="RuiIconButton__Icon">
-                                    <i class="fas fa-search"></i>
-                                </span>
-                            </span>
-                        </button>
+                <div class="RuiTextField RuiTextField__search RuiAppBar__search__searchBar">
+                    <input type="text" name="input" class="RuiInputBase RuiInput px-2" placeholder="Search">
+                    <button class="RuiButtonBase RuiIconButton RuiInput__searchIcon">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <div class="RuiAppBar__search__action">
+                    <a class="RuiButtonBase RuiButton RuiButton--contained RuiButton--textSizeSmall RuiButton--textPrimary m-2"
+                        href="./pages/auth/signin.html">
+                        <span class="RuiButton__label">Log in</span>
+                    </a>
+                    <div class="RuiAppBar__search__action--icons">
+                        <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit">
+                            <div class="RuiBadge">
+                                <span class="RuiBadge__Icon"><i class="far fa-heart"></i></span>
+                                <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">5</span>
+                            </div>
+                        </a>
+                        <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit">
+                            <div class="RuiBadge">
+                                <span class="RuiBadge__Icon"><i class="fas fa-baby-carriage"></i></span>
+                                <span class="RuiBadge__badge RuiBadge__badge--anchorOriginTopRight">10</span>
+                            </div>
+                        </a>
                     </div>
                 </div>
-
-                <div class="RuiToolbar__right">
-                    <button class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
-                        <span class="RuiIconButton__Label">
-                            <span class="RuiIconButton__Icon">
-                                <i class="far fa-sun"></i>
-                            </span>
-                        </span>
-                    </button>
-                    <a href="#" class="RuiButtonBase RuiIconButton RuiIconButton--colorInherit m-2">
-                        <span class="RuiIconButton__Label">
-                            <span class="RuiIconButton__Icon">
-                                <i class="fab fa-github"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
+            </div>
+            <div class="RuiTextField RuiTextField__search RuiAppBar__search__searchBar--after">
+                <input type="text" name="input" class="RuiInputBase RuiInput px-2" placeholder="Search">
+                <button class="RuiButtonBase RuiIconButton RuiInput__searchIcon">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
     </header>
