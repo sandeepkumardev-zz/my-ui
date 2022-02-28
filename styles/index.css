@@ -4,12 +4,12 @@
 @import "./container.css";
 
 @import "../components/Paper/paper.css";
-@import "../components/Navbar/navbar.css";
 @import "../components/Avatar/avatar.css";
 @import "../components/Badge/badge.css";
 @import "../components/Alert/alert.css";
 @import "../components/Button/button.css";
 @import "../components/Input/input.css";
+@import "../components/Navbar/navbar.css";
 @import "../components/Image/image.css";
 @import "../components/Card/card.css";
 @import "../components/Footer/footer.css";
