@@ -1078,12 +1078,6 @@
   padding-right: 1.6rem;
 }
 
-@media (min-width: 600px) {
-  .RuiToolbar--regular {
-    min-height: 6.4rem;
-  }
-}
-
 /* style for search navbar */
 .RuiAppBar__search {
   display: flex;
@@ -1096,9 +1090,7 @@
 .RuiAppBar__search__content h3 {
   white-space: nowrap;
 }
-.RuiAppBar__search__content .RuiButtonBase {
-  display: none;
-}
+
 .RuiAppBar__search__searchBar {
   max-width: 60rem;
   width: 100%;
@@ -1129,23 +1121,6 @@
 }
 .RuiAppBar__search__action .RuiBadge__badge {
   background-color: var(--accent-color);
-}
-
-@media screen and (max-width: 600px) {
-  .RuiAppBar__search__content .RuiButtonBase {
-    display: block;
-  }
-  .RuiAppBar__search__searchBar {
-    display: none;
-  }
-  .RuiAppBar__search__searchBar--after {
-    display: flex;
-  }
-}
-@media screen and (max-width: 350px) {
-  .RuiAppBar__search__action--icons {
-    display: none;
-  }
 }
 
 /* style for navbar with side nav */
@@ -1279,6 +1254,26 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--light-grey);
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--regular {
+    min-height: 6.4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .RuiAppBar__search__searchBar {
+    display: none;
+  }
+  .RuiAppBar__search__searchBar--after {
+    display: flex;
+  }
+}
+@media screen and (max-width: 350px) {
+  .RuiAppBar__search__action--icons {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
