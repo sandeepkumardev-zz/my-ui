@@ -102,6 +102,13 @@ ul {
   max-width: var(--container-xl);
 }
 
+.RuiNav--borderRight {
+  border-right: 1px solid var(--light-grey);
+}
+.RuiNav--borderLeft {
+  border-left: 1px solid var(--light-grey);
+}
+
 /* .................................................paper styles............................................ */
 .RuiPaper {
   color: var(--text-color-dark);
@@ -137,83 +144,101 @@ ul {
     0px 4px 4px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
 }
 
-/* .................................................alert styles............................................ */
-.RuiAlert {
-  display: flex;
-  padding: 6px 16px;
-  font-size: 1.8rem;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+/* .................................................typography styles............................................ */
+.RuiTypography__h1 {
+  font-size: 3.2rem;
   font-weight: 400;
-  line-height: 1.43;
-  border-radius: 4px;
-  letter-spacing: 0.01071em;
-  background-color: transparent;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.RuiAlert--standardError {
-  color: var(--danger-color);
-  background-color: var(--danger-bg);
+.RuiTypography__h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.RuiAlert__icon {
-  display: flex;
-  opacity: 0.9;
-  padding: 0.7rem 0;
+.RuiTypography__h3 {
   font-size: 2.4rem;
-  margin-right: 1.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.RuiAlert__message {
-  padding: 0.8rem 0;
+.RuiTypography__h4 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.RuiAlert--standardWarning {
-  color: var(--warning-color);
-  background-color: var(--warning-bg);
-}
-.RuiAlert--standardInfo {
-  color: var(--info-color);
-  background-color: var(--info-bg);
-}
-.RuiAlert--standardSuccess {
-  color: var(--text-color);
-  background-color: var(--success-color);
+.RuiTypography__h5 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-#RuiAlert__title {
-  margin-top: -2px;
-  font-weight: 700;
+.RuiTypography__h6 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0rem;
 }
 
-.RuiAlert__actions {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: -8px;
-  padding-left: 16px;
+.RuiTypography__body1 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938rem;
 }
 
-/* .................................................toast ....................................*/
-.RuiToast__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.RuiTypography__body2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01071rem;
 }
 
-.RuiToast {
-  position: fixed;
-  margin-bottom: 2rem;
-  bottom: 0;
-  opacity: 0;
+.RuiTypography--colorTextSecondary {
+  color: var(--dark-grey);
 }
 
-@media screen and (max-width: 600px) {
-  .RuiToast__container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.RuiTypography--colorAccent {
+  color: var(--accent-color);
+}
+
+.RuiTypography--colorDanger {
+  color: var(--danger-color);
+}
+
+.RuiTypography--colorTextPrimary {
+  color: var(--primary-color-light);
+}
+
+.RuiTypography--colorTextInherit {
+  color: inherit;
+}
+
+.RuiTypography--gutterBottom {
+  margin-bottom: 0.35em;
+}
+
+.RuiTextTransform--capitalize {
+  text-transform: capitalize;
+}
+
+.RuiTextTransform--lowercase {
+  text-transform: lowercase;
+}
+
+.RuiTypography--bold {
+  font-weight: bold;
+}
+
+.RuiTypography--lighter {
+  font-weight: lighter;
 }
 
 /* .................................................avatar styles............................................ */
@@ -360,6 +385,7 @@ ul {
 }
 
 /* .................................................button styles............................................ */
+/* basic style for buttons */
 /* basic style for buttons */
 .RuiButtonBase {
   color: inherit;
@@ -583,154 +609,7 @@ ul {
   margin-right: 8px;
 }
 
-/* ............................................card styles............................................ */
-.card__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--light-grey);
-  padding: 2rem;
-  gap: 3rem;
-}
-
-.RuiCard {
-  min-width: 27rem;
-  max-width: 37rem;
-  overflow: hidden;
-}
-
-.RuiCard__content {
-  padding: 1.6rem;
-}
-
-.RuiCard__Action__Area {
-  width: 100%;
-  display: block;
-  text-align: inherit;
-}
-.RuiCard__Action__Area:hover {
-  background-color: var(--light-grey);
-  transition: background-color 300ms;
-}
-
-.RuiCard__media {
-  display: block;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.RuiCard__media--img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.RuiCard__actions {
-  padding: 1rem;
-  display: flex;
-}
-
-.RuiCard--horizontal {
-  display: flex;
-}
-
-.RuiCard--horizontal__actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-bottom: 0.5rem;
-}
-
-.RuiCard--horizontal__image {
-  width: 200px;
-}
-
-.RuiIconButton--sizeBig {
-  font-size: 2.4rem;
-  padding: 0.8rem;
-}
-
-.RuiCard__badge--displayRight {
-  position: absolute;
-  right: 0;
-  margin: 1rem;
-}
-
-.RuiCard--positionRelative {
-  position: relative;
-}
-
-.RuiCard__content--overlay {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: var(--text-color);
-  padding: 0.5rem;
-}
-.RuiCard__content--overlay p {
-  color: var(--text-color);
-}
-.RuiCard__actions--displayRight {
-  justify-content: right;
-}
-
-/* ............................................drawer styles............................................ */
-.RuiDrawer {
-  user-select: none;
-  padding: 1.2rem;
-  position: fixed;
-  width: 24rem;
-  height: 100vh;
-  overflow: scroll;
-}
-.RuiDrawer__item {
-  margin: 0.5rem;
-  padding: 1rem;
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-  border-radius: 5px;
-  font-size: 1.8rem;
-  cursor: pointer;
-  font-weight: lighter;
-}
-.RuiDrawer__items .RuiDrawer__item {
-  color: var(--text-color-dark);
-  text-decoration: none;
-}
-.RuiDrawer__item:hover {
-  background-color: var(--grey-highlight);
-}
-.RuiDrawer__item:active {
-  background-color: var(--primary-color-highlight);
-}
-.RuiDrawer .RuiDrawer__item--selected {
-  background-color: var(--primary-color-highlight);
-  color: var(--primary-color-light);
-  font-weight: normal;
-  box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
-    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
-}
-.RuiDrawer__item--selected:hover {
-  background-color: var(--primary-color-highlight);
-  cursor: default;
-}
-
-/* ............................................footer styles............................................ */
-.RuiFooter {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-/* ............................................grid styles................................*/
+/* ...........................................grid styles ........................................*/
 .RuiGrid {
   display: grid;
   height: 10rem;
@@ -843,58 +722,268 @@ ul {
   font-weight: 500;
 }
 
-/* ............................................navbar styles............................................ */
-.RuiAppbar {
-  width: 100%;
+/*.............................................rating styles ...........................................*/
+.RuiRating {
   display: flex;
-  z-index: 1100;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
 }
 
-.RuiAppBar--colorPrimary {
+.RuiRating--checked i {
+  color: var(--warning-color);
+}
+
+/*.............................................alert styles ...........................................*/
+.RuiAlert {
+  display: flex;
+  padding: 6px 16px;
+  font-size: 1.8rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-radius: 4px;
+  letter-spacing: 0.01071em;
+  background-color: transparent;
+}
+
+.RuiAlert--standardError {
+  color: var(--danger-color);
+  background-color: var(--danger-bg);
+}
+
+.RuiAlert__icon {
+  display: flex;
+  opacity: 0.9;
+  padding: 0.7rem 0;
+  font-size: 2.4rem;
+  margin-right: 1.2rem;
+}
+
+.RuiAlert__message {
+  padding: 0.8rem 0;
+}
+
+.RuiAlert--standardWarning {
+  color: var(--warning-color);
+  background-color: var(--warning-bg);
+}
+.RuiAlert--standardInfo {
+  color: var(--info-color);
+  background-color: var(--info-bg);
+}
+.RuiAlert--standardSuccess {
   color: var(--text-color);
-  background-color: var(--primary-color-light);
+  background-color: var(--success-color);
 }
 
-.RuiAppBar--positionStatic {
-  position: static;
-}
-.RuiAppBar--positionFixed {
-  position: fixed;
-}
-.RuiAppBar--positionSticky {
-  position: sticky;
-  top: 0;
+#RuiAlert__title {
+  margin-top: -2px;
+  font-weight: 700;
 }
 
-.RuiToolbar__container {
-  width: 100%;
-}
-
-.RuiToolbar__container--lg {
-  max-width: var(--container-lg);
-}
-
-.RuiToolbar {
+.RuiAlert__actions {
   display: flex;
-  position: relative;
   align-items: center;
+  margin-left: auto;
+  margin-right: -8px;
+  padding-left: 16px;
 }
 
-.RuiToolbar--regular {
-  min-height: 5.6rem;
+/* ............................................card styles............................................ */
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  gap: 3rem;
 }
 
-.RuiToolbar--gutters {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
+.RuiCard {
+  min-width: 27rem;
+  max-width: 37rem;
+  overflow: hidden;
 }
 
-@media (min-width: 600px) {
-  .RuiToolbar--regular {
-    min-height: 6.4rem;
-  }
+.RuiCard__content {
+  padding: 1.6rem;
+}
+
+.RuiCard__Action__Area {
+  width: 100%;
+  display: block;
+  text-align: inherit;
+}
+.RuiCard__Action__Area:hover {
+  background-color: var(--light-grey);
+  transition: background-color 300ms;
+}
+
+.RuiCard__media {
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.RuiCard__media--img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.RuiCard__actions {
+  padding: 1rem;
+  display: flex;
+}
+
+.RuiCard--horizontal {
+  display: flex;
+}
+
+.RuiCard--horizontal__actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.RuiCard--horizontal__image {
+  width: 200px;
+}
+
+.RuiIconButton--sizeBig {
+  font-size: 2.4rem;
+  padding: 0.8rem;
+}
+
+.RuiCard__badge--displayRight {
+  position: absolute;
+  right: 0;
+  margin: 1rem;
+}
+
+.RuiCard--positionRelative {
+  position: relative;
+}
+
+.RuiCard__content--overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+.RuiCard__content--overlay p {
+  color: var(--text-color);
+}
+.RuiCard__actions--displayRight {
+  justify-content: right;
+}
+
+/* ............................................drawer styles............................................ */
+.RuiDrawer__container {
+  height: 400px;
+  width: fit-content;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.RuiDrawer {
+  user-select: none;
+  padding: 1.2rem;
+  position: fixed;
+  width: 24rem;
+  height: 100vh;
+  overflow: auto;
+}
+.RuiDrawer__item {
+  margin: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: lighter;
+}
+.RuiDrawer__items .RuiDrawer__item {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+.RuiDrawer__item:hover {
+  background-color: var(--grey-highlight);
+}
+.RuiDrawer__item:active {
+  background-color: var(--primary-color-highlight);
+}
+.RuiDrawer .RuiDrawer__item--selected {
+  background-color: var(--primary-color-highlight);
+  color: var(--primary-color-light);
+  font-weight: normal;
+  box-shadow: 0px 2px 2px -2px rgb(0 0 0 / 20%),
+    0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.RuiDrawer__item--selected:hover {
+  background-color: var(--primary-color-highlight);
+  cursor: default;
+}
+
+/* simple drawer */
+.RuiSimpleDrawer--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.RuiSimpleDrawer {
+  flex-basis: 200px;
+  min-width: 300px;
+  height: 300px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 3px 1px rgb(175, 175, 175);
+  padding: 15px;
+  position: relative;
+}
+
+.RuiSimpleDrawer__content {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.RuiSimpleDrawer__items {
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: -15px;
+  overflow-y: scroll;
+}
+
+.RuiSimpleDrawer__item {
+  padding: 13px;
+  margin: 5px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.RuiSimpleDrawer__item:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.RuiSimpleDrawer__item--selected {
+  background-color: rgb(180, 170, 255);
+  color: rgb(60, 3, 177);
 }
 
 /* ............................................list styles............................................ */
@@ -977,112 +1066,281 @@ ul {
   align-items: center;
 }
 
-/* .............................. .............. rating styles.............................*/
-.RuiRating {
+/* ............................................navbar styles............................................ */
+.RuiAppbar {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  z-index: 1100;
+  flex-direction: column;
+  align-items: center;
 }
 
-.RuiRating--checked i {
-  color: var(--warning-color);
+.RuiAppBar--colorPrimary {
+  color: var(--text-color);
+  background-color: var(--primary-color-light);
+}
+
+.RuiAppBar--positionStatic {
+  position: static;
+}
+.RuiAppBar--positionFixed {
+  position: fixed;
+}
+.RuiAppBar--positionSticky {
+  position: sticky;
+  top: 0;
+}
+
+.RuiToolbar__container {
+  width: 100%;
+}
+
+.RuiToolbar__container--lg {
+  max-width: var(--container-lg);
+}
+
+.RuiToolbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.RuiToolbar--regular {
+  min-height: 5.6rem;
+}
+
+.RuiToolbar--gutters {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+@media (min-width: 600px) {
+  .RuiToolbar--regular {
+    min-height: 6.4rem;
+  }
+}
+
+/* style for search navbar */
+.RuiAppBar__search {
+  display: flex;
+  justify-content: space-between;
+}
+.RuiAppBar__search__content {
+  display: flex;
+  align-items: center;
+}
+.RuiAppBar__search__content h3 {
+  white-space: nowrap;
+}
+.RuiAppBar__search__content .RuiButtonBase {
+  display: none;
+}
+.RuiAppBar__search__searchBar {
+  max-width: 60rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+.RuiAppBar__search__searchBar--after {
+  width: 100%;
+  background-color: var(--secondary-color);
+  display: none;
+}
+.RuiAppBar__search__searchBar--after {
+  margin: 0;
+  border-radius: 0;
+}
+.RuiAppBar__search__action {
+  display: flex;
+  align-items: center;
+}
+.RuiAppBar__search__action .RuiButton {
+  font-weight: 700;
+  background-color: var(--secondary-color);
+}
+.RuiAppBar__search__action--icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.RuiAppBar__search__action .RuiBadge__badge {
+  background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 600px) {
+  .RuiAppBar__search__content .RuiButtonBase {
+    display: block;
+  }
+  .RuiAppBar__search__searchBar {
+    display: none;
+  }
+  .RuiAppBar__search__searchBar--after {
+    display: flex;
+  }
+}
+@media screen and (max-width: 350px) {
+  .RuiAppBar__search__action--icons {
+    display: none;
+  }
+}
+
+/* style for navbar with side nav */
+#RuiNavToggle {
+  display: none;
+}
+.RuiNavAndContent__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr 180px;
+  grid-template-areas: "nav main content";
+
+  min-height: calc(100vh - 6.4rem);
+}
+.RuiNav__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav main";
+
+  min-height: calc(100vh - 6.4rem);
+}
+.RuiContent__grid {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  grid-template-areas: "main content";
+
+  min-height: calc(100vh - 6.4rem);
+}
+/*declare grid areas*/
+#RuiNav--left {
+  grid-area: nav;
+}
+#RuiMain {
+  grid-area: main;
+}
+#RuiContent--right {
+  grid-area: content;
+}
+/*media query*/
+@media only screen and (max-width: 1100px) {
+  .RuiNavAndContent__grid {
+    grid-template-columns: 1fr 180px;
+    grid-template-areas: "main content";
+  }
+  .RuiNav__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  #RuiNav--left {
+    display: none;
+  }
+  #RuiNavToggle {
+    display: block;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .RuiNavAndContent__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  .RuiContent__grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "main";
+  }
+  #RuiContent--right {
+    display: none;
+  }
+}
+
+/* ...................style for navbar grid */
+.RuiAppbar .RuiToggle {
+  display: none;
+}
+
+/* right nav styles */
+.RuiContent {
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  user-select: none;
+  position: fixed;
+}
+.RuiContent__lists {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+.RuiContent__listItem {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: lighter;
+  border: 2px solid transparent;
+}
+.RuiContent__listItem:hover {
+  border-left: 2px solid var(--primary-color);
+}
+
+/* toggle drawer model */
+.RuiDrawer__model {
+  position: fixed;
+  z-index: 1300;
+  display: none;
+}
+.RuiBackdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.RuiModel__content {
+  top: 0;
+  height: 100%;
+  position: fixed;
+  width: 24rem;
+  background-color: var(--text-color);
+}
+
+.RuiModel__content .RuiDrawer {
+  overflow-x: hidden;
+}
+
+.RuiModel__content .RuiDrawer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--light-grey);
+}
+
+@media only screen and (max-width: 1100px) {
+  .RuiAppbar .RuiToggle {
+    display: flex;
+  }
+}
+
+/* ............................................footer styles............................................ */
+.RuiFooter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
-/* ............................................Typography styles............................................ */
-.RuiTypography__h1 {
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
+/* modifier styles */
+.fullHeight {
+  min-height: 100vh;
 }
-
-.RuiTypography__h2 {
-  font-size: 2.8rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
-}
-
-.RuiTypography__h3 {
-  font-size: 2.4rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
-}
-
-.RuiTypography__h4 {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
-}
-
-.RuiTypography__h5 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
-}
-
-.RuiTypography__h6 {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.334;
-  letter-spacing: 0rem;
-}
-
-.RuiTypography__body1 {
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.00938rem;
-}
-
-.RuiTypography__body2 {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.01071rem;
-}
-
-.RuiTypography--colorTextSecondary {
-  color: var(--dark-grey);
-}
-
-.RuiTypography--colorAccent {
-  color: var(--accent-color);
-}
-
-.RuiTypography--colorDanger {
-  color: var(--danger-color);
-}
-
-.RuiTypography--colorTextPrimary {
-  color: var(--primary-color-light);
-}
-
-.RuiTypography--colorTextInherit {
-  color: inherit;
-}
-
-.RuiTypography--gutterBottom {
-  margin-bottom: 0.35em;
-}
-
-.RuiTextTransform--capitalize {
-  text-transform: capitalize;
-}
-
-.RuiTextTransform--lowercase {
-  text-transform: lowercase;
-}
-
-.RuiTypography--bold {
-  font-weight: bold;
-}
-
-.RuiTypography--lighter {
-  font-weight: lighter;
+.RuiGridLayout .RuiDrawer {
+  height: calc(100vh - 64px);
+  overflow-x: hidden;
 }
 
 /* ............................................sizes styles............................................ */
