@@ -18,3 +18,12 @@
   gap: 1rem;
   margin: 3rem;
 }
+
+.fullHeight {
+  min-height: 100vh;
+}
+
+.RuiGridLayout .RuiDrawer {
+  height: calc(100vh - 64px);
+  overflow-x: hidden;
+}
