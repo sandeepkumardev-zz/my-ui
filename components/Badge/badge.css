@@ -65,9 +65,9 @@
 }
 
 .RuiBadge--dot {
-  height: 14px;
+  height: 13px;
   padding: 0;
-  min-width: 14px;
+  min-width: 13px;
   border-radius: 50%;
 }
 
